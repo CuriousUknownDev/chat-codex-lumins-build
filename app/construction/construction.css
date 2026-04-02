@@ -1,0 +1,945 @@
+/* =================================================================
+   CONSTRUCTION PAGE STYLES - Blueprint/Architectural Theme
+   Dark blue/teal hero, orange accent (#fb923c), clean white sections
+   ================================================================= */
+
+/* ================================================================
+   HERO SECTION
+   ================================================================ */
+
+.construction-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0c4a6e 0%, #075985 100%);
+  padding: 140px 40px 80px;
+  overflow: hidden;
+}
+
+.blueprint-lines {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.blueprint-line {
+  position: absolute;
+  background: white;
+  animation: blueprintFade 3s ease-in-out infinite;
+}
+
+@keyframes blueprintFade {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 0.7; }
+}
+
+.blueprint-h-1 {
+  height: 2px;
+  width: 80%;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.blueprint-h-2 {
+  height: 2px;
+  width: 60%;
+  bottom: 25%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+
+.blueprint-v-1 {
+  width: 2px;
+  height: 70%;
+  left: 30%;
+  top: 15%;
+  animation-delay: 0.8s;
+}
+
+.blueprint-v-2 {
+  width: 2px;
+  height: 50%;
+  right: 25%;
+  bottom: 10%;
+  animation-delay: 2.2s;
+}
+
+.construction-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-architect-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(251, 146, 60, 0.2);
+  border: 2px solid #fb923c;
+  padding: 12px 24px;
+  border-radius: 100px;
+  color: #fed7aa;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 32px;
+}
+
+.architect-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.construction-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 800;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.title-accent-orange {
+  background: linear-gradient(135deg, #fb923c 0%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.construction-hero-description {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto 48px;
+  max-width: 800px;
+}
+
+.construction-pillars {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pillar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.pillar-item:hover {
+  background: rgba(251, 146, 60, 0.2);
+  border-color: rgba(251, 146, 60, 0.5);
+}
+
+.pillar-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* ================================================================
+   SHARED SECTION CONTAINERS
+   ================================================================ */
+
+.section-container-construction {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+
+.section-header-construction {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.section-badge-construction {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(251, 146, 60, 0.1);
+  border: 2px solid #fb923c;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fb923c;
+  margin-bottom: 24px;
+}
+
+.section-title-construction {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.section-description-construction {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ================================================================
+   WHY SECTION
+   ================================================================ */
+
+.why-section {
+  background: white;
+}
+
+.why-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.why-content .section-badge-construction {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.why-content .section-title-construction {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.why-text {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.why-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.why-benefit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background: rgba(251, 146, 60, 0.05);
+  border-left: 4px solid #fb923c;
+  border-radius: 0 12px 12px 0;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.why-benefit:hover {
+  background: rgba(251, 146, 60, 0.1);
+  transform: translateX(6px);
+}
+
+.benefit-number {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 700;
+  color: #fb923c;
+  flex-shrink: 0;
+  min-width: 70px;
+  line-height: 1;
+}
+
+.benefit-label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Blueprint stack visual */
+.why-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueprint-stack {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 380px;
+}
+
+.blueprint-layer {
+  position: absolute;
+  width: 88%;
+  height: 260px;
+  background: white;
+  border: 3px solid #fb923c;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  left: 50%;
+  transform: translateX(-50%);
+  background-image:
+    linear-gradient(rgba(251, 146, 60, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(251, 146, 60, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.layer-1 {
+  transform: translateX(calc(-50% - 28px)) rotate(-6deg);
+  z-index: 1;
+  opacity: 0.45;
+  top: 60px;
+}
+
+.layer-2 {
+  transform: translateX(-50%) rotate(0deg);
+  z-index: 2;
+  opacity: 0.7;
+  top: 40px;
+}
+
+.layer-3 {
+  transform: translateX(calc(-50% + 28px)) rotate(5deg);
+  z-index: 3;
+  top: 20px;
+}
+
+.layer-label {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: #fb923c;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+/* ================================================================
+   APPROACH / TIMELINE SECTION
+   ================================================================ */
+
+.approach-section {
+  background: #f8fafc;
+  position: relative;
+}
+
+.approach-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #fb923c, transparent);
+}
+
+.approach-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-phase {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.phase-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.phase-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fb923c;
+  border: 4px solid white;
+  box-shadow: 0 0 0 3px #fb923c;
+  flex-shrink: 0;
+  margin-top: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.phase-line {
+  flex: 1;
+  width: 3px;
+  background: linear-gradient(to bottom, #fb923c, rgba(251, 146, 60, 0.2));
+  margin-top: 8px;
+  margin-bottom: -8px;
+}
+
+.phase-content {
+  padding-bottom: 56px;
+}
+
+.timeline-phase:last-child .phase-content {
+  padding-bottom: 0;
+}
+
+.phase-stage {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fb923c;
+  margin-bottom: 10px;
+}
+
+.phase-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.phase-description {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.phase-deliverables {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phase-deliverables li {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.phase-deliverables li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #fb923c;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ================================================================
+   BUILDING TYPES SECTION
+   ================================================================ */
+
+.building-types-section {
+  background: white;
+}
+
+.building-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.building-card {
+  background: #f8fafc;
+  border: 2px solid #f1f5f9;
+  border-radius: 20px;
+  padding: 40px 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.building-card:hover {
+  transform: translateY(-8px);
+  border-color: #fb923c;
+  box-shadow: 0 20px 56px rgba(251, 146, 60, 0.15);
+  background: white;
+}
+
+.building-icon-large {
+  font-size: 56px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.building-card:hover .building-icon-large {
+  transform: scale(1.12);
+}
+
+.building-type {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.building-desc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ================================================================
+   CTA SECTION
+   ================================================================ */
+
+.construction-cta-section {
+  background: linear-gradient(135deg, #0c4a6e 0%, #075985 60%, #0369a1 100%);
+  padding: 100px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.construction-cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(251, 146, 60, 0.12) 0%, transparent 55%),
+    radial-gradient(circle at 85% 50%, rgba(255, 255, 255, 0.06) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.construction-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.construction-cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 24px;
+  line-height: 1.15;
+}
+
+.construction-cta-description {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin-bottom: 44px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.construction-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.btn-outline-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-outline-dark:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: white;
+  color: white;
+}
+
+/* Partners strip */
+.construction-partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.partners-label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partners-list span {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.partners-list span:nth-child(even) {
+  color: #fb923c;
+  font-size: 12px;
+}
+
+/* ================================================================
+   RESPONSIVE - 1024px
+   ================================================================ */
+
+@media (max-width: 1024px) {
+  .section-container-construction {
+    padding: 80px 32px;
+  }
+
+  .why-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .why-visual {
+    order: -1;
+  }
+
+  .blueprint-stack {
+    max-width: 340px;
+    height: 320px;
+    margin: 0 auto;
+  }
+
+  .blueprint-layer {
+    height: 220px;
+  }
+
+  .building-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .phase-deliverables {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ================================================================
+   RESPONSIVE - 768px
+   ================================================================ */
+
+@media (max-width: 768px) {
+  /* Hero */
+  .construction-hero {
+    min-height: auto;
+    padding: 120px 24px 60px;
+  }
+
+  .construction-hero-title {
+    font-size: 36px;
+  }
+
+  .construction-hero-description {
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+
+  .construction-pillars {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .pillar-item {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .hero-architect-badge {
+    font-size: 12px;
+    padding: 10px 18px;
+  }
+
+  /* Shared sections */
+  .section-container-construction {
+    padding: 64px 20px;
+  }
+
+  .section-header-construction {
+    margin-bottom: 52px;
+  }
+
+  .section-title-construction {
+    font-size: 30px;
+  }
+
+  .section-description-construction {
+    font-size: 16px;
+  }
+
+  .section-badge-construction {
+    font-size: 11px;
+    padding: 6px 16px;
+  }
+
+  /* Why section */
+  .why-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .why-visual {
+    order: -1;
+  }
+
+  .blueprint-stack {
+    max-width: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .blueprint-layer {
+    height: 200px;
+  }
+
+  .layer-label {
+    font-size: 15px;
+  }
+
+  .why-benefits {
+    gap: 12px;
+  }
+
+  .benefit-number {
+    font-size: 26px;
+    min-width: 60px;
+  }
+
+  .benefit-label {
+    font-size: 15px;
+  }
+
+  /* Approach timeline */
+  .timeline-phase {
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+  }
+
+  .phase-title {
+    font-size: 22px;
+  }
+
+  .phase-description {
+    font-size: 15px;
+  }
+
+  .phase-content {
+    padding-bottom: 40px;
+  }
+
+  .phase-deliverables {
+    grid-template-columns: 1fr;
+  }
+
+  /* Building types */
+  .building-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .building-card {
+    padding: 32px 24px;
+  }
+
+  .building-icon-large {
+    font-size: 48px;
+  }
+
+  /* CTA */
+  .construction-cta-section {
+    padding: 80px 24px;
+  }
+
+  .construction-cta-title {
+    font-size: 30px;
+  }
+
+  .construction-cta-description {
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+
+  .construction-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .construction-cta-buttons .btn,
+  .construction-cta-buttons .btn-outline-dark {
+    width: 100%;
+    max-width: 360px;
+    justify-content: center;
+  }
+
+  .partners-list {
+    gap: 8px;
+  }
+
+  .partners-list span {
+    font-size: 14px;
+  }
+}
+
+/* ================================================================
+   RESPONSIVE - 480px
+   ================================================================ */
+
+@media (max-width: 480px) {
+  .construction-hero {
+    padding: 100px 16px 48px;
+  }
+
+  .construction-hero-title {
+    font-size: 28px;
+  }
+
+  .construction-hero-description {
+    font-size: 15px;
+  }
+
+  .section-container-construction {
+    padding: 52px 16px;
+  }
+
+  .section-title-construction {
+    font-size: 26px;
+  }
+
+  .blueprint-stack {
+    max-width: 240px;
+    height: 240px;
+  }
+
+  .blueprint-layer {
+    height: 170px;
+    width: 92%;
+  }
+
+  .layer-label {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+
+  .benefit-number {
+    font-size: 22px;
+    min-width: 52px;
+  }
+
+  .benefit-label {
+    font-size: 14px;
+  }
+
+  .why-benefit {
+    padding: 14px 16px;
+  }
+
+  .phase-title {
+    font-size: 20px;
+  }
+
+  .timeline-phase {
+    grid-template-columns: 36px 1fr;
+    gap: 14px;
+  }
+
+  .phase-dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .building-card {
+    padding: 28px 20px;
+  }
+
+  .building-type {
+    font-size: 18px;
+  }
+
+  .building-desc {
+    font-size: 14px;
+  }
+
+  .construction-cta-title {
+    font-size: 26px;
+  }
+
+  .construction-cta-description {
+    font-size: 15px;
+  }
+
+  .btn-outline-dark {
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+
+  .partners-label {
+    font-size: 12px;
+  }
+
+  .partners-list span {
+    font-size: 13px;
+  }
+}
