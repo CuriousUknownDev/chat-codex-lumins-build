@@ -567,8 +567,8 @@ footer{background:var(--dark);padding:48px 2% 24px;margin-top:64px}
         <li><a href="#">About Us</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="/privacy.html">Privacy Policy</a></li>
-        <li><a href="/terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="//privacy">Privacy Policy</a></li>
+        <li><a href="//terms">Terms &amp; Conditions</a></li>
       </ul>
     </div>
   </div>
