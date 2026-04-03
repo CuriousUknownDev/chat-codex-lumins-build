@@ -264,7 +264,7 @@ footer{background:var(--dark);padding:48px 2% 24px;margin-top:64px}
 <!-- HEADER -->
 <header>
   <div class="header-main">
-    <a href="#" class="logo">
+    <a href="/" class="logo"">
       <div class="logo-icon">
         <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 4 12.8V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.2A7 7 0 0 1 12 2zm3 17v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1h6z"/></svg>
       </div>
@@ -281,7 +281,8 @@ footer{background:var(--dark);padding:48px 2% 24px;margin-top:64px}
         <span class="cart-count" id="cartCount">0</span>
       </button>
     </div>
-  </div>
+
+    <a href="/" style="color:#F5C842;font-size:0.85rem;font-weight:600;text-decoration:none;letter-spacing:0.05em;white-space:nowrap;display:flex;align-items:center;gap:4px;opacity:0.9;padding:6px 10px;border:1px solid rgba(245,200,66,0.3);border-radius:6px;transition:opacity 0.2s;">&#8592; Main Site</a>  </div>
 </header>
 
 <!-- CATEGORY NAV -->
