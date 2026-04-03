@@ -1,9 +1,11 @@
+import NavBar from '../components/NavBar';
 export const metadata = { title: 'Terms & Conditions | Lumins Lighting' };
 
 export default function TermsPage() {
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: `:root { --gold:#F5C842;--gold-dark:#C9A010;--dark:#0F0F0F;--dark2:#1A1A1A;--dark3:#222;--gray:#6B6B6B;--gray-light:#E8E8E8;--white:#FFFFFF;--font:'Segoe UI',system-ui,-apple-system,sans-serif; }
+            <NavBar />
+<style dangerouslySetInnerHTML={{ __html: `:root { --gold:#F5C842;--gold-dark:#C9A010;--dark:#0F0F0F;--dark2:#1A1A1A;--dark3:#222;--gray:#6B6B6B;--gray-light:#E8E8E8;--white:#FFFFFF;--font:'Segoe UI',system-ui,-apple-system,sans-serif; }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{font-family:var(--font);background:var(--dark);color:#D0D0D0;line-height:1.75;font-size:15px}
     header{background:var(--dark2);border-bottom:1px solid #2a2a2a;padding:0 24px;position:sticky;top:0;z-index:100}
@@ -51,13 +53,7 @@ export default function TermsPage() {
     footer{border-top:1px solid #1e1e1e;padding:24px;text-align:center;font-size:12px;color:var(--gray)}
     footer a{color:var(--gray);text-decoration:none}
     footer a:hover{color:var(--gold)}` }} />
-      <div dangerouslySetInnerHTML={{ __html: `<header>
-    <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">💡</div>Lumins Lighting</a>
-      <a href="/" class="back-link">← Back to Store</a>
-    </div>
-  </header>
-  <div class="page-wrap">
+      <div dangerouslySetInnerHTML={{ __html: `  <div class="page-wrap">
     <div class="page-hero">
       <h1>Terms &amp; Conditions</h1>
       <p class="meta">Effective Date: <span>April 1, 2026</span> &nbsp;·&nbsp; Last Updated: <span>April 1, 2026</span></p>
