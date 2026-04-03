@@ -35,6 +35,7 @@ export default function Home() {
             <a href="#services" className="btn btn-secondary">
               Explore Solutions
             </a>
+            <a href="/shop" className="btn btn-primary">Shop Here</a>
           </div>
 
           <div className="hero-stats">
