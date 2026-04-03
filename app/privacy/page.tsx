@@ -1,8 +1,10 @@
+import NavBar from '../components/NavBar';
 export const metadata = { title: 'Privacy Policy | Lumins Lighting' };
 
 export default function PrivacyPage() {
   return (
     <>
+      <NavBar />
       <style dangerouslySetInnerHTML={{ __html: `:root {
       --gold: #F5C842;
       --gold-dark: #C9A010;
@@ -55,13 +57,7 @@ export default function PrivacyPage() {
     footer { border-top: 1px solid #1e1e1e; padding: 24px; text-align: center; font-size: 12px; color: var(--gray); }
     footer a { color: var(--gray); text-decoration: none; }
     footer a:hover { color: var(--gold); }` }} />
-      <div dangerouslySetInnerHTML={{ __html: `<header>
-    <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">💡</div>Lumins Lighting</a>
-      <a href="/" class="back-link">← Back to Store</a>
-    </div>
-  </header>
-  <div class="page-wrap">
+      <div dangerouslySetInnerHTML={{ __html: `  <div class="page-wrap">
     <div class="page-hero">
       <h1>Privacy Policy</h1>
       <p class="meta">Effective Date: <span>April 1, 2026</span> &nbsp;·&nbsp; Last Updated: <span>April 1, 2026</span></p>
