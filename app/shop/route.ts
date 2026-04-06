@@ -710,15 +710,39 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
       <p class="footer-desc">Commercial LED lighting solutions for dealerships, warehouses, and facilities throughout Southern California. Factory-direct pricing, 5-year warranty, and expert support.</p>
     </div>
     <div class="footer-col">
-      <h5>Products</h5>
-      <ul>
-        <li><a href="#">Shop/Bay Lights</a></li>
-        <li><a href="#">Parking & Exterior</a></li>
-        <li><a href="#">Canopy Lights</a></li>
-        <li><a href="#">Office & Interior</a></li>
-        <li><a href="#">Accessories</a></li>
-      </ul>
-    </div>
+  <h5>Products</h5>
+  <ul>
+    <li>
+      <a href="mailto:quotes@luminslighting.com?subject=Request for Product Quote Not Listed on Site&body=Company Name:%0AContact Name:%0APhone:%0AProduct Type (Shop/Bay):%0AQuantity:%0AProject Details:%0A">
+        Shop/Bay Lights
+      </a>
+    </li>
+
+    <li>
+      <a href="mailto:quotes@luminslighting.com?subject=Request for Product Quote Not Listed on Site&body=Company Name:%0AContact Name:%0APhone:%0AProduct Type (Parking & Exterior):%0AQuantity:%0AProject Details:%0A">
+        Parking & Exterior
+      </a>
+    </li>
+
+    <li>
+      <a href="mailto:quotes@luminslighting.com?subject=Request for Product Quote Not Listed on Site&body=Company Name:%0AContact Name:%0APhone:%0AProduct Type (Canopy Lights):%0AQuantity:%0AProject Details:%0A">
+        Canopy Lights
+      </a>
+    </li>
+
+    <li>
+      <a href="mailto:quotes@luminslighting.com?subject=Request for Product Quote Not Listed on Site&body=Company Name:%0AContact Name:%0APhone:%0AProduct Type (Office & Interior):%0AQuantity:%0AProject Details:%0A">
+        Office & Interior
+      </a>
+    </li>
+
+    <li>
+      <a href="mailto:quotes@luminslighting.com?subject=Request for Product Quote Not Listed on Site&body=Company Name:%0AContact Name:%0APhone:%0AProduct Type (Accessories):%0AQuantity:%0AProject Details:%0A">
+        Accessories
+      </a>
+    </li>
+  </ul>
+</div>
    <div class="footer-col">
   <h5>Support</h5>
   <ul>
