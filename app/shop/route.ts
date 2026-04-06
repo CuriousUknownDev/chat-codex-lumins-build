@@ -442,7 +442,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
       <button>🔍</button>
     </div>
     <div class="header-actions">
-      <button class="header-btn" onclick="window.location='#contact'">💬 Get a Quote</button>
+      <a class="header-btn" href="mailto:quotes@luminslighting.com?subject=Quote Request&body=Company Name:%0AProject Type:%0AFixture Type:%0AQuantity:%0ALocation:%0A">💬 Get a Quote</a>
       <button class="header-btn cart-btn" onclick="openCart()">
         🛒 Cart
         <span class="cart-count" id="cartCount">0</span>
