@@ -417,7 +417,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
 <body>
 
 <div class="topbar">
-  <span> Free shipping on orders over $500 · Fast quote turnaround · 5-Year warranty on all fixtures</span>
+  <span> Free shipping on orders over $1,000 · Fast quote turnaround · 5-Year warranty on all fixtures</span>
   <div class="topbar-right">
     <a href="#">Track Order</a>
     <a href="mailto:quotes@luminslighting.com?subject=Bulk Pricing Request&body=Company Name:%0AProject Details:%0AQuantity Needed:%0A">Bulk Pricing</a>
