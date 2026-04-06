@@ -56,7 +56,97 @@ export default function PrivacyPage() {
     .toc ol li a:hover { color: var(--gold); }
     footer { border-top: 1px solid #1e1e1e; padding: 24px; text-align: center; font-size: 12px; color: var(--gray); }
     footer a { color: var(--gray); text-decoration: none; }
-    footer a:hover { color: var(--gold); }` }} />
+    footer a:hover { color: var(--gold); }
+    /* ====================================================
+       LUMINS MAIN THEME OVERRIDE — Privacy & Terms
+       ==================================================== */
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+
+    :root {
+      /* Swap dark/gold for main-site light/blue */
+      --gold:       #0066CC;
+      --gold-dark:  #0052A3;
+      --dark:       #FFFFFF;
+      --dark2:      #F8FAFC;
+      --dark3:      #E8EEF4;
+      --gray:       #555555;
+      --gray-light: #E8EEF4;
+      --font: 'DM Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Base */
+    html, body {
+      background: #FFFFFF !important;
+      color: #1C1C1C !important;
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif !important;
+    }
+
+    /* Headings — Space Grotesk, dark text (was white-on-dark) */
+    h1, h2, h3, h4 {
+      color: #0F0F0F !important;
+      font-family: 'Space Grotesk', system-ui, sans-serif !important;
+    }
+
+    /* Body text */
+    p, li, td, th, span { color: #1C1C1C !important; }
+
+    /* Links */
+    a { color: #0066CC !important; }
+    a:hover { color: #0052A3 !important; }
+
+    /* Page hero strip — use main site dark-navy instead of pitch black */
+    .page-hero {
+      background: linear-gradient(135deg, #1A1A2E 0%, #252540 50%, #1A1A2E 100%) !important;
+    }
+    .page-hero h1, .page-hero p, .page-hero .meta { color: #FFFFFF !important; }
+    .page-hero .meta span { color: #3385D6 !important; }
+
+    /* Section backgrounds — alternate light */
+    section { background: transparent !important; }
+    section:nth-child(even) { background: #F8FAFC !important; }
+
+    /* Gold border accent → blue */
+    .gold-border { border-left-color: #0066CC !important; }
+    .highlight-box { background: rgba(0,102,204,0.06) !important; border-left-color: #0066CC !important; }
+
+    /* TOC */
+    .toc { background: #F8FAFC !important; border-color: #E8EEF4 !important; }
+    .toc a { color: #0066CC !important; }
+
+    /* Tables */
+    table { background: #FFFFFF !important; }
+    thead { background: #1A1A2E !important; }
+    thead th { color: #FFFFFF !important; }
+    tbody tr:nth-child(even) { background: #F8FAFC !important; }
+    tbody tr:nth-child(odd) { background: #FFFFFF !important; }
+    td, th { border-color: #E8EEF4 !important; color: #1C1C1C !important; }
+
+    /* Footer strip */
+    footer { background: #1A1A2E !important; }
+    footer p, footer a { color: rgba(255,255,255,0.7) !important; }
+    footer a:hover { color: #FFFFFF !important; }
+
+    /* Rights/cards grids */
+    .rights-grid .right-card, .card, [class*="card"] {
+      background: #FFFFFF !important;
+      border: 1px solid #E8EEF4 !important;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05) !important;
+      border-radius: 12px !important;
+    }
+    [class*="card"] h3, [class*="card"] h4 { color: #0066CC !important; }
+    [class*="card"] p { color: #444 !important; }
+
+    /* Callout / warning boxes */
+    .callout, .notice, .warning, [class*="callout"], [class*="notice"] {
+      background: rgba(0,102,204,0.06) !important;
+      border-color: #0066CC !important;
+      color: #1C1C1C !important;
+    }
+    .all-sales-final, [class*="final"] {
+      background: rgba(239,68,68,0.06) !important;
+      border-color: #EF4444 !important;
+    }
+` }} />
       <div dangerouslySetInnerHTML={{ __html: `  <div class="page-wrap">
     <div class="page-hero">
       <h1>Privacy Policy</h1>
