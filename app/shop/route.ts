@@ -113,9 +113,6 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .product-name{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.35}
 .product-spec-pills{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
 .spec-pill{background:var(--gray-lighter);padding:2px 8px;border-radius:5px;font-size:.72rem;color:var(--gray);font-weight:500}
-.product-rating{display:flex;align-items:center;gap:6px;margin-bottom:10px}
-.stars-small{color:var(--gold);font-size:.8rem}
-.rating-count{font-size:.75rem;color:var(--gray)}
 .product-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
 .product-price{font-size:1.25rem;font-weight:800;color:var(--dark)}
 .product-price-orig{font-size:.85rem;color:var(--gray);text-decoration:line-through}
@@ -530,13 +527,6 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
         <div class="filter-item"><input type="checkbox" id="av2" onchange="applyFilters()"><label for="av2">Ships in 2–5 Days</label></div>
       </div>
     </div>
-    <div class="sidebar-section">
-      <div class="sidebar-title">Ratings</div>
-      <div class="filter-group">
-        <div class="filter-item"><input type="checkbox" id="rt1" onchange="applyFilters()"><label for="rt1">⭐⭐⭐⭐⭐ 5 Stars</label></div>
-        <div class="filter-item"><input type="checkbox" id="rt2" onchange="applyFilters()"><label for="rt2">⭐⭐⭐⭐ 4+ Stars</label></div>
-      </div>
-    </div>
     <button class="clear-filters" onclick="clearFilters()">✕ Clear All Filters</button>
   </aside>
 
@@ -549,7 +539,6 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
           <option value="featured">Sort: Featured</option>
           <option value="price-asc">Price: Low to High</option>
           <option value="price-desc">Price: High to Low</option>
-          <option value="rating">Highest Rated</option>
           <option value="newest">Newest</option>
         </select>
         <div class="view-toggles">
@@ -893,7 +882,6 @@ function cardHTML(p){
       <div class="product-sku">SKU: \${p.sku}</div>
       <div class="product-name">\${p.name}</div>
       \${pills?\`<div class="product-spec-pills">\${pills}</div>\`:''}
-      <div class="product-rating"><span class="stars-small">\${'★'.repeat(Math.floor(p.rating))}\${'☆'.repeat(5-Math.floor(p.rating))}</span><span class="rating-count">\${p.rating} (\${p.reviews})</span></div>
       \${caseInfo}
       <div class="product-price-row"><span class="product-price">\${_dp.toFixed(2)}</span>\${p.caseOnly ? \`<span style="font-size:.76rem;color:#888;margin-left:4px">/ case</span>\` : \`\`}\${origPrice}</div>
       <div class="product-stock">\${stockLabel}</div>
@@ -926,7 +914,7 @@ function filterCategory(cat, btn){
 }
 function applyFilters(){ renderProducts(); }
 function clearFilters(){
-  ['f-bay','f-parking','f-canopy','f-office','f-accessories','f-linear','nl1','nl2','nl3','w1','w2','w3','w4','ct1','ct2','ct3','ct4','av1','av2','rt1','rt2','ut1','ut2','ut3','ut4'].forEach(id=>{const el=document.getElementById(id);if(el)el.checked=false;});
+  ['f-bay','f-parking','f-canopy','f-office','f-accessories','f-linear','nl1','nl2','nl3','w1','w2','w3','w4','ct1','ct2','ct3','ct4','av1','av2','ut1','ut2','ut3','ut4'].forEach(id=>{const el=document.getElementById(id);if(el)el.checked=false;});
   document.getElementById('priceMin').value='';
   document.getElementById('priceMax').value='';
   activeCategory='all';
@@ -1109,7 +1097,6 @@ function openDetail(id){
   document.getElementById('detailInfo').innerHTML = \`
     <div class="product-sku">SKU: \${p.sku}</div>
     <div class="product-name">\${p.name}</div>
-    <div class="product-rating"><span class="stars-small">\${'★'.repeat(Math.floor(p.rating))}</span><span class="rating-count">\${p.rating} (\${p.reviews} reviews)</span></div>
     <div class="product-price-row"><span class="product-price">$\${p.price.toFixed(2)}</span>\${origPrice}</div>
     <p style="font-size:.88rem;color:var(--gray);margin:10px 0 14px;line-height:1.6">\${p.desc}</p>
     <table class="specs-table">\${specRows}</table>
