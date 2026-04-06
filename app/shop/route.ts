@@ -247,6 +247,174 @@ footer{background:var(--dark);padding:48px 2% 24px;margin-top:64px}
 @media(max-width:600px){.product-grid{grid-template-columns:1fr}.cart-drawer{width:100%}.footer-grid{grid-template-columns:1fr 1fr}.header-main{flex-wrap:wrap}.search-bar{order:3;flex:0 0 100%}}
 
 .product-img img{max-width:92%;max-height:82%;object-fit:contain;}
+
+/* ============================================================
+   LUMINS MAIN — THEME OVERRIDE (matches luminslighting.com)
+   ============================================================ */
+
+/* 1. Google Fonts — same as main site */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+
+/* 2. Override CSS variables */
+:root {
+  --font: 'DM Sans', system-ui, -apple-system, sans-serif;
+  /* Replace dark-on-dark gold with site blue */
+  --gold:       #0066CC;
+  --gold-light: #3385D6;
+  --gold-dark:  #0052A3;
+  /* Keep --dark as deep navy (matches main site hero / NavBar) */
+  --dark:  #1A1A2E;
+  --dark2: #252540;
+  --dark3: #E8EEF4;
+}
+
+/* 3. Body / base */
+html, body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif !important;
+  background: #FFFFFF !important;
+  color: #1C1C1C !important;
+}
+
+/* 4. Headings — Space Grotesk */
+h1, h2, h3, h4,
+.product-name, .modal-product-name,
+.logo-text, .page-title, .cart-title,
+.filter-title, .section-title { font-family: 'Space Grotesk', system-ui, sans-serif !important; }
+
+/* 5. Header — match main site NavBar depth */
+header {
+  background: #1A1A2E !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+.logo-text { color: #FFFFFF !important; }
+.logo-text span { color: #3385D6 !important; }
+.search-bar input {
+  background: rgba(255,255,255,0.08) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255,255,255,0.15) !important;
+}
+.search-bar input::placeholder { color: rgba(255,255,255,0.45) !important; }
+.search-icon { color: rgba(255,255,255,0.5) !important; }
+.header-btn { color: #FFFFFF !important; }
+.header-btn svg { stroke: #FFFFFF !important; fill: none !important; }
+
+/* 6. Logo icon — blue */
+.logo-icon { background: #0066CC !important; border-radius: 10px !important; }
+.logo-icon svg { fill: #FFFFFF !important; }
+
+/* 7. Cart badge — blue */
+.cart-count { background: #0066CC !important; color: #FFFFFF !important; }
+
+/* 8. Main content area — light */
+.shop-layout, .products-section, .sidebar {
+  background: #FFFFFF !important;
+}
+
+/* 9. Sidebar */
+.sidebar {
+  border-right: 1px solid #E8EEF4 !important;
+}
+.filter-section { background: #F8FAFC !important; border-radius: 12px !important; border: 1px solid #E8EEF4 !important; }
+.filter-title { color: #0F0F0F !important; }
+.filter-label { color: #444 !important; }
+input[type="checkbox"] { accent-color: #0066CC !important; }
+input[type="range"] { accent-color: #0066CC !important; }
+
+/* 10. Category nav */
+.cat-nav-btn { color: #555 !important; border-color: #E8EEF4 !important; }
+.cat-nav-btn.active, .cat-nav-btn:hover {
+  background: #0066CC !important;
+  color: #FFFFFF !important;
+  border-color: #0066CC !important;
+}
+
+/* 11. Product cards */
+.product-card {
+  background: #FFFFFF !important;
+  border: 1px solid #E8EEF4 !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+  border-radius: 14px !important;
+}
+.product-card:hover { box-shadow: 0 8px 28px rgba(0,102,204,0.12) !important; border-color: #3385D6 !important; }
+.product-name { color: #0F0F0F !important; }
+.product-sub { color: #666 !important; }
+
+/* 12. Price */
+.price-amount, .price-display, .case-price { color: #0066CC !important; font-family: 'Space Grotesk', sans-serif !important; font-weight: 700 !important; }
+
+/* 13. Badges */
+.badge, .badge-new, .badge-sale { background: #0066CC !important; color: #FFFFFF !important; }
+
+/* 14. View toggle */
+.view-btn { color: #666 !important; }
+.view-btn.active { background: #0066CC !important; color: #FFFFFF !important; }
+
+/* 15. Add to Cart / Buy buttons → blue */
+.btn-cart {
+  background: #0066CC !important;
+  color: #FFFFFF !important;
+  border-radius: 10px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 600 !important;
+}
+.btn-cart:hover { background: #0052A3 !important; }
+
+.btn-view { border-color: #E8EEF4 !important; color: #555 !important; }
+.btn-view:hover { background: #F8FAFC !important; }
+
+/* 16. Cart drawer */
+.cart-drawer { background: #FFFFFF !important; }
+.cart-header { background: #1A1A2E !important; color: #FFFFFF !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; }
+.cart-header h2 { color: #FFFFFF !important; }
+.cart-close { color: #FFFFFF !important; }
+.cart-item { border-bottom: 1px solid #E8EEF4 !important; }
+.item-name { color: #0F0F0F !important; }
+.item-meta { color: #666 !important; }
+.item-price { color: #0066CC !important; font-weight: 700 !important; }
+.cart-total-label, .cart-total-value { color: #0F0F0F !important; }
+.cart-total-value { color: #0066CC !important; font-weight: 700 !important; }
+.cart-checkout-btn {
+  background: #0066CC !important;
+  color: #FFFFFF !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}
+.cart-checkout-btn:hover { background: #0052A3 !important; }
+.cart-continue { color: #0066CC !important; border-color: #0066CC !important; }
+
+/* 17. Checkout modal */
+.checkout-modal, .modal-content { background: #FFFFFF !important; }
+.modal-header { background: #1A1A2E !important; }
+.modal-header h2, .modal-header h3, .modal-close { color: #FFFFFF !important; }
+.form-group label { color: #444 !important; }
+.form-group input, .form-group select {
+  border-color: #E8EEF4 !important;
+  background: #F8FAFC !important;
+  color: #0F0F0F !important;
+}
+.form-group input:focus { border-color: #0066CC !important; box-shadow: 0 0 0 3px rgba(0,102,204,0.15) !important; }
+.checkout-submit {
+  background: #0066CC !important;
+  color: #FFFFFF !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}
+.checkout-submit:hover { background: #0052A3 !important; }
+
+/* 18. "← Main Site" back link in header */
+a[href="/"].back-to-site, header a[href="/"] {
+  color: rgba(255,255,255,0.75) !important;
+  border-color: rgba(255,255,255,0.2) !important;
+  font-family: 'DM Sans', sans-serif !important;
+}
+a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !important; border-color: rgba(255,255,255,0.5) !important; }
+
+/* 19. Success state */
+.checkout-submit.success { background: #16a34a !important; }
+
+/* 20. Results count / sort */
+.results-count { color: #666 !important; }
+.sort-select { border-color: #E8EEF4 !important; color: #444 !important; background: #FFFFFF !important; }
 </style>
 </head>
 <body>
