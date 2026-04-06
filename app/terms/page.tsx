@@ -52,7 +52,111 @@ export default function TermsPage() {
     .toc ol li a:hover{color:var(--gold)}
     footer{border-top:1px solid #1e1e1e;padding:24px;text-align:center;font-size:12px;color:var(--gray)}
     footer a{color:var(--gray);text-decoration:none}
-    footer a:hover{color:var(--gold)}` }} />
+    footer a:hover{color:var(--gold)}
+
+/* ============================================================
+   LUMINS MAIN SITE THEME OVERRIDE
+   Matches luminslighting.com: Space Grotesk + DM Sans,
+   #0066CC blue accents, white body, #1A1A2E navy header/footer
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+
+:root {
+  --gold:       #0066CC;
+  --gold-dark:  #0052A3;
+  --gold-light: #3385D6;
+  --dark:  #FFFFFF;
+  --dark2: #F8FAFC;
+  --dark3: #E8EEF4;
+  --gray:  #6B7280;
+  --gray-light: #E8EEF4;
+  --white: #FFFFFF;
+  --font:  'DM Sans', system-ui, -apple-system, sans-serif;
+}
+
+html, body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif !important;
+  background: #FFFFFF !important;
+  color: #1C1C1C !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif !important;
+  color: #0F0F0F !important;
+}
+
+header {
+  background: #1A1A2E !important;
+  border-bottom: 1px solid #252540 !important;
+}
+
+.logo { color: #FFFFFF !important; }
+.logo-icon { background: #0066CC !important; }
+.logo-icon svg { fill: #FFFFFF !important; }
+.nav-links a { color: #E8EEF4 !important; }
+.nav-links a:hover { color: #FFFFFF !important; }
+
+.page-hero {
+  background: linear-gradient(135deg, #1A1A2E 0%, #252540 50%, #1A1A2E 100%) !important;
+}
+.page-hero h1 { color: #FFFFFF !important; }
+.page-hero p  { color: #C8D4E8 !important; }
+.page-hero .hero-badge {
+  background: rgba(0,102,204,0.2) !important;
+  color: #7DB8F0 !important;
+  border-color: rgba(0,102,204,0.3) !important;
+}
+
+section { background: #FFFFFF !important; }
+section:nth-child(even) { background: #F8FAFC !important; }
+section h2 { color: #0F0F0F !important; }
+section p  { color: #374151 !important; }
+ul, ul li { color: #374151 !important; }
+
+.highlight-box {
+  background: #F8FAFC !important;
+  border: 1px solid #E8EEF4 !important;
+}
+.highlight-box.gold-border {
+  border-left: 3px solid #0066CC !important;
+}
+.highlight-box p { color: #374151 !important; }
+
+.rights-grid .right-card {
+  background: #F8FAFC !important;
+  border: 1px solid #E8EEF4 !important;
+}
+.right-card .right-title { color: #0066CC !important; }
+.right-card p { color: #374151 !important; }
+
+.contact-block {
+  background: #F8FAFC !important;
+  border: 1px solid #E8EEF4 !important;
+}
+.contact-block p { color: #374151 !important; }
+.contact-block a { color: #0066CC !important; }
+
+.toc {
+  background: #F8FAFC !important;
+  border: 1px solid #E8EEF4 !important;
+}
+.toc h3 { color: #1A1A2E !important; }
+.toc ol li a { color: #0066CC !important; }
+
+table { background: #FFFFFF !important; }
+thead { background: #1A1A2E !important; }
+thead th { color: #FFFFFF !important; }
+tbody tr { border-bottom: 1px solid #E8EEF4 !important; }
+tbody tr:nth-child(even) { background: #F8FAFC !important; }
+tbody td { color: #374151 !important; }
+
+footer {
+  background: #1A1A2E !important;
+  border-top: 1px solid #252540 !important;
+}
+footer p, footer a { color: #9EB3CC !important; }
+footer a:hover    { color: #FFFFFF !important; }
+` }} />
       <div dangerouslySetInnerHTML={{ __html: `  <div class="page-wrap">
     <div class="page-hero">
       <h1>Terms &amp; Conditions</h1>
