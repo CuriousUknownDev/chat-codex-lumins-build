@@ -875,7 +875,7 @@ function cardHTML(p){
   const caseInfo = p.caseOnly ? \`<div style="font-size:.74rem;font-weight:700;color:#166534;background:#DCFCE7;padding:2px 8px;border-radius:5px;display:inline-block;margin-bottom:4px">Sold by Case (25 tubes)</div><div style="font-size:.72rem;color:#888;margin-bottom:4px">\${p.price.toFixed(2)} per tube</div>\` : '';
   const origPrice = _op ? \`<span class="product-price-orig">\${_op.toFixed(2)}</span><span class="product-price-save">Save \${(_op-_dp).toFixed(2)}</span>\` : '';
   const stockLabel = (p.stock==='in-stock'||p.inStock) ? '<span class="in-stock">✓ In Stock</span>' : p.stock==='ships-soon' ? '<span class="low-stock">⏱ Ships in 2–5 Days</span>' : '<span class="out-stock">✗ Out of Stock</span>';
-  const pills = [p.watts?\`\${p.watts}W\`:null, p.lumens?\`\${(p.lumens/1000).toFixed(1)}k lm\`:null, p.cct||null].filter(Boolean).map(s=>\`<span class="spec-pill">\${s}</span>\`).join('');
+  const pills = [p.watts?\`\${p.watts}W\`:null, p.lumens?\`\${p.lumens.toLocaleString()} lumens\`:null, p.cct||null].filter(Boolean).map(s=>\`<span class="spec-pill">\${s}</span>\`).join('');
   return \`<div class="product-card" id="pc-\${p.id}">
     <div class="product-img">\${badge}\${p.img ? \`<img src="\${p.img}" alt="\${p.name}"/>\` : \`<span style="font-size:\${currentView==='list'?'3rem':'4rem'}">\${p.emoji}</span>\`}</div>
     <div class="product-info">
