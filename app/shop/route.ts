@@ -859,7 +859,7 @@ function getFilteredProducts(){
   const maxP = parseFloat(document.getElementById('priceMax')?.value)||Infinity;
   if(minP || maxP<Infinity) items = items.filter(p => p.price>=minP && p.price<=maxP);
   // Stock
-  if(document.getElementById('av1')?.checked) items = items.filter(p => p.stock==='in-stock');
+  if(document.getElementById('av1')?.checked) items = items.filter(p => p.stock==='in-stock' || p.inStock===true);
   // Search
   if(searchQuery){
     const q = searchQuery.toLowerCase();
