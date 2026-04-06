@@ -463,10 +463,10 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     <p>Premium fixtures, no middleman markup. Serving dealerships, warehouses & facilities across SoCal.</p>
   </div>
   <div class="promo-badges">
-    <div class="promo-badge">⚡ <strong>40–60%</strong> Energy Savings</div>
-    <div class="promo-badge">🛡️ <strong>5-Year</strong> Warranty</div>
-    <div class="promo-badge">📦 Ships in <strong>2–5 Days</strong></div>
-    <div class="promo-badge">💰 Rebate <strong>Eligible</strong></div>
+    <div class="promo-badge"> <strong>40–60%</strong> Energy Savings</div>
+    <div class="promo-badge"> <strong>5-Year</strong> Warranty</div>
+    <div class="promo-badge"> Ships in <strong>2–5 Days</strong></div>
+    <div class="promo-badge"> Rebate <strong>Eligible</strong></div>
   </div>
 </div>
 
