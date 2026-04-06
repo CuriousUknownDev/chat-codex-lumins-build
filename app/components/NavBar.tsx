@@ -25,9 +25,19 @@ export default function NavBar() {
         </button>
 
         <div className={`nav-links${isOpen ? ' nav-links-open' : ''}`}>
+          <div className="search-wrapper">
+            <input
+              type="text"
+              placeholder="Search by product name, SKU, wattage..."
+            />
+            <button className="search-btn" aria-label="Search">
+              🔍
+            </button>
+          </div>
+
           <a href="/#services" onClick={() => setIsOpen(false)}>Services</a>
           <a href="/#brands" onClick={() => setIsOpen(false)}>Partners</a>
-                    <a href="/shop" onClick={() => setIsOpen(false)}>Shop</a>
+          <a href="/shop" onClick={() => setIsOpen(false)}>Shop</a>
           <a href="/#contact" className="nav-cta" onClick={() => setIsOpen(false)}>
             Get Started
           </a>
