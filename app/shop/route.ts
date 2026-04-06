@@ -732,9 +732,9 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     <div class="footer-col">
       <h5>Company</h5>
       <ul>
-        <li><a href="#">About Us</a></li>
+        <li><a href="https://www.luminslighting.com">About Us</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="mailto:info@luminslighting.com?subject=General Inquiry&body=Name:%0ACompany:%0AMessage:%0A">Contact</a></li>
         <li><a href="/privacy">Privacy Policy</a></li>
         <li><a href="/terms">Terms &amp; Conditions</a></li>
       </ul>
