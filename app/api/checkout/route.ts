@@ -10,6 +10,11 @@ export async function POST(request: Request) {
     params.append('success_url', origin + '/shop?order=success');
     params.append('cancel_url', origin + '/shop');
 
+    // Calculate subtotal to determine shipping rate
+    const subtotalCents = items.reduce((sum: number, item: { price: number; qty: number }) =>
+      sum + Math.round(item.price * 100) * item.qty, 0);
+    const freeShipping = subtotalCents >= 100000; // free over $1,000
+
     items.forEach((item: { name: string; price: number; qty: number; caseOnly?: boolean; caseQty?: number; sku?: string }, i: number) => {
       const label = item.caseOnly
         ? item.name + ' — Case of ' + (item.caseQty || 25)
@@ -20,6 +25,22 @@ export async function POST(request: Request) {
       params.append('line_items[' + i + '][price_data][unit_amount]', String(Math.round(item.price * 100)));
       params.append('line_items[' + i + '][quantity]', String(item.qty));
     });
+
+    // Shipping address collection (US only per Terms & Conditions)
+    params.append('shipping_address_collection[allowed_countries][0]', 'US');
+
+    // Shipping rate — free over $1,000, otherwise $15 standard (5–7 business days)
+    params.append('shipping_options[0][shipping_rate_data][type]', 'fixed_amount');
+    params.append('shipping_options[0][shipping_rate_data][display_name]', freeShipping ? 'Free Shipping' : 'Standard Shipping');
+    params.append('shipping_options[0][shipping_rate_data][fixed_amount][amount]', freeShipping ? '0' : '1500');
+    params.append('shipping_options[0][shipping_rate_data][fixed_amount][currency]', 'usd');
+    params.append('shipping_options[0][shipping_rate_data][delivery_estimate][minimum][unit]', 'business_day');
+    params.append('shipping_options[0][shipping_rate_data][delivery_estimate][minimum][value]', '5');
+    params.append('shipping_options[0][shipping_rate_data][delivery_estimate][maximum][unit]', 'business_day');
+    params.append('shipping_options[0][shipping_rate_data][delivery_estimate][maximum][value]', '7');
+
+    // Automatic sales tax via Stripe Tax
+    params.append('automatic_tax[enabled]', 'true');
 
     const stripeRes = await fetch('https://api.stripe.com/v1/checkout/sessions', {
       method: 'POST',
