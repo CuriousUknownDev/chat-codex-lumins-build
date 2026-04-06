@@ -724,7 +724,11 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
       <ul>
         <li><a href="#">Track Order</a></li>
         <li><a href="#">Returns</a></li>
-        <li><a href="#">Warranty Claims</a></li>
+        <li>
+  <a href="mailto:info@luminslighting.com?subject=Lumins Lighting Warranty Claim&body=Company Name:%0AContact Name:%0APhone:%0AProduct SKU:%0AInvoice or PO Number:%0AIssue Description:%0A">
+    Warranty Claims
+  </a>
+</li>
         <a href="mailto:quotes@luminslighting.com?subject=Bulk Pricing Request&body=Company Name:%0AProject Details:%0AQuantity Needed:%0A">Bulk Pricing</a>
         <li><a href="#">Rebate Help</a></li>
       </ul>
