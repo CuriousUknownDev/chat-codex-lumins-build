@@ -493,9 +493,9 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     <div class="sidebar-section">
       <div class="sidebar-title">Nominal Length</div>
       <div class="filter-group">
-        <div class="filter-item"><input type="checkbox" id="nl1" onchange="applyFilters()"><label for="nl1">2 ft</label><span class="count">4</span></div>
-        <div class="filter-item"><input type="checkbox" id="nl2" onchange="applyFilters()"><label for="nl2">3 ft</label><span class="count">4</span></div>
-        <div class="filter-item"><input type="checkbox" id="nl3" onchange="applyFilters()"><label for="nl3">4 ft</label><span class="count">4</span></div>
+        <div class="filter-item"><input type="checkbox" id="nl1" onchange="applyFilters()"><label for="nl1">2 ft</label><span class="count">1</span></div>
+        <div class="filter-item"><input type="checkbox" id="nl2" onchange="applyFilters()"><label for="nl2">3 ft</label><span class="count">1</span></div>
+        <div class="filter-item"><input type="checkbox" id="nl3" onchange="applyFilters()"><label for="nl3">4 ft</label><span class="count">1</span></div>
       </div>
     </div>
     <div class="sidebar-section">
