@@ -725,7 +725,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
         <li><a href="#">Track Order</a></li>
         <li><a href="#">Returns</a></li>
         <li><a href="#">Warranty Claims</a></li>
-        <li><a href="#">Bulk Pricing</a></li>
+        <a href="mailto:quotes@luminslighting.com?subject=Bulk Pricing Request&body=Company Name:%0AProject Details:%0AQuantity Needed:%0A">Bulk Pricing</a>
         <li><a href="#">Rebate Help</a></li>
       </ul>
     </div>
