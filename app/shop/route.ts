@@ -995,7 +995,7 @@ function renderCartItems(){
   }
   footer.style.display='block';
   const subtotal = cart.reduce((s,i)=>s+i.price*i.qty,0);
-  const shipping = subtotal>=500?0:49;
+  const shipping = subtotal>=1000?0:15;
   el.innerHTML = cart.map(i=>\`
     <div class="cart-item">
       <div class="cart-item-img">\${i.emoji}</div>
@@ -1059,7 +1059,7 @@ function showCheckoutStep(n){
 function buildOrderSummary(){
   const subtotal = cart.reduce((s,i)=>s+i.price*i.qty,0);
   const shippingEl = document.querySelector('input[name=shipping]:checked');
-  const shippingCost = shippingEl?.value==='express'?49:shippingEl?.value==='overnight'?99:(subtotal>=500?0:49);
+  const shippingCost = subtotal>=1000?0:15;
   const tax = subtotal*0.0975;
   const total = subtotal+shippingCost+tax;
   const rows = cart.map(i=>\`<tr><td>\${i.name.split('—')[0].trim()} <small style="color:var(--gray)">(\${i.sku})</small></td><td style="text-align:center">\${i.qty}</td><td style="text-align:right">$\${i.price.toFixed(2)}</td><td style="text-align:right">$\${(i.price*i.qty).toFixed(2)}</td></tr>\`).join('');
