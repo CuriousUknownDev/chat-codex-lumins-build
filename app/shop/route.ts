@@ -417,7 +417,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
 <body>
 
 <div class="topbar">
-  <span>🚚 Free shipping on orders over $500 · Fast quote turnaround · 5-Year warranty on all fixtures</span>
+  <span> Free shipping on orders over $500 · Fast quote turnaround · 5-Year warranty on all fixtures</span>
   <div class="topbar-right">
     <a href="#">Track Order</a>
     <a href="mailto:quotes@luminslighting.com?subject=Bulk Pricing Request&body=Company Name:%0AProject Details:%0AQuantity Needed:%0A">Bulk Pricing</a>
@@ -436,7 +436,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     </a>
     <div class="search-bar">
       <input type="text" id="searchInput" placeholder="Search by product name, SKU, wattage..." oninput="handleSearch()"/>
-      <button>🔍</button>
+      <button></button>
     </div>
     <div class="header-actions">
       <a class="header-btn" href="mailto:quotes@luminslighting.com?subject=Quote Request&body=Company Name:%0AProject Type:%0AFixture Type:%0AQuantity:%0ALocation:%0A">💬 Get a Quote</a>
