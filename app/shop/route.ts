@@ -436,7 +436,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     </a>
     <div class="search-bar">
       <input type="text" id="searchInput" placeholder="Search by product name, SKU, wattage..." oninput="handleSearch()"/>
-      <button></button>
+      <button>🔍</button>
     </div>
     <div class="header-actions">
       <a class="header-btn" href="mailto:quotes@luminslighting.com?subject=Quote Request&body=Company Name:%0AProject Type:%0AFixture Type:%0AQuantity:%0ALocation:%0A">💬 Get a Quote</a>
