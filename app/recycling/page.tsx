@@ -1,6 +1,16 @@
+import type { Metadata } from "next"
 import "./recycling.css"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
+
+export const metadata: Metadata = {
+  title: "Certified Recycling and Disposal",
+  description:
+    "Certified recycling and disposal services for California auto dealerships, including airbags, batteries, gas tanks, pretensioners, and e-waste.",
+  alternates: {
+    canonical: "/recycling",
+  },
+}
 
 export default function RecyclingPage() {
   return (

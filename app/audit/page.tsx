@@ -1,6 +1,16 @@
+import type { Metadata } from 'next'
 import './audit.css'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+
+export const metadata: Metadata = {
+  title: 'Free Energy Audits',
+  description:
+    'Free commercial lighting energy audits for California facilities with ROI analysis, upgrade recommendations, and rebate guidance.',
+  alternates: {
+    canonical: '/audit',
+  },
+}
 
 export default function AuditPage() {
   return (

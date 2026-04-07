@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+
+export const metadata: Metadata = {
+  title: "Commercial LED Retrofit and Recycling in California",
+  description:
+    "Lumins Lighting helps California businesses with LED retrofits, free energy audits, lighting design, and certified recycling services.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

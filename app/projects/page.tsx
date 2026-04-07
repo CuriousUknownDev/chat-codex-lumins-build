@@ -1,6 +1,16 @@
+import type { Metadata } from 'next'
 import './projects.css'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+
+export const metadata: Metadata = {
+  title: 'LED Retrofit Projects',
+  description:
+    'LED retrofit solutions for California businesses, including fixture upgrades, controls integration, and turnkey installation planning.',
+  alternates: {
+    canonical: '/projects',
+  },
+}
 
 export default function ProjectsPage() {
   return (

@@ -1,6 +1,16 @@
+import type { Metadata } from 'next'
 import './construction.css'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+
+export const metadata: Metadata = {
+  title: 'New Construction Lighting Design',
+  description:
+    'Lighting design and implementation for new construction projects in California, from planning and coordination through commissioning.',
+  alternates: {
+    canonical: '/construction',
+  },
+}
 
 export default function ConstructionPage() {
   return (
