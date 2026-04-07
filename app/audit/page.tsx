@@ -1,7 +1,6 @@
 import './audit.css'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import Link from 'next/link'
 
 export default function AuditPage() {
   return (

@@ -308,7 +308,7 @@ footer a:hover    { color: #FFFFFF !important; }
     </section>
   </div>
   <footer>
-    <p>© 2026 Lumins Lighting LLC · All rights reserved · <a href="/privacy.html">Privacy Policy</a> · <a href="/">Back to Store</a></p>
+    <p>© 2026 Lumins Lighting LLC · All rights reserved · <a href="/privacy">Privacy Policy</a> · <a href="/">Back to Store</a></p>
   </footer>` }} />
     </>
   );

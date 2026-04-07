@@ -26,12 +26,12 @@ export default function NavBar() {
 
         <div className={`nav-links${isOpen ? ' nav-links-open' : ''}`}>
 
-          <a href="/#services" onClick={() => setIsOpen(false)}>Services</a>
-          <a href="/#brands" onClick={() => setIsOpen(false)}>Partners</a>
-          <a href="/shop" onClick={() => setIsOpen(false)}>Shop</a>
-          <a href="/#contact" className="nav-cta" onClick={() => setIsOpen(false)}>
+          <Link href="/#services" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link href="/#brands" onClick={() => setIsOpen(false)}>Partners</Link>
+          <Link href="/shop" onClick={() => setIsOpen(false)}>Shop</Link>
+          <Link href="/#contact" className="nav-cta" onClick={() => setIsOpen(false)}>
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

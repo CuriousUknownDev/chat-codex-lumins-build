@@ -1031,7 +1031,7 @@ function openCheckout(){
   fetch('/api/checkout', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({items: cart.map(i => ({name: i.name, price: i.price, qty: i.qty, caseOnly: i.caseOnly||false, caseQty: i.caseQty||1, sku: i.sku}))})
+    body: JSON.stringify({items: cart.map(i => ({id: i.id, qty: i.qty}))})
   })
   .then(r => r.json())
   .then(data => {
