@@ -34,11 +34,11 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .logo-icon svg{width:20px;height:20px;fill:var(--gold)}
 .logo-text{font-size:1.3rem;font-weight:800;color:var(--dark);letter-spacing:-.02em}
 .logo-text span{color:var(--gold)}
-.search-bar{flex:1;display:flex;max-width:640px}
-.search-bar input{flex:1;padding:10px 16px;border:2px solid var(--gray-light);border-right:none;border-radius:9px 0 0 9px;font-size:.92rem;outline:none;font-family:var(--font)}
-.search-bar input:focus{border-color:var(--dark)}
-.search-bar button{background:var(--dark);color:var(--white);border:none;padding:0 20px;border-radius:0 9px 9px 0;cursor:pointer;font-size:1.1rem;transition:background .2s}
-.search-bar button:hover{background:#333}
+.search-bar{flex:1;display:flex;position:relative;max-width:640px}
+.search-bar input{flex:1;padding:10px 44px 10px 16px;border:2px solid var(--gray-light);border-radius:9px;font-size:.92rem;outline:none;font-family:var(--font)}
+.search-bar input:focus{border-color:var(--gold)}
+.search-bar button{position:absolute;right:2px;top:50%;transform:translateY(-50%);background:none;border:none;padding:0 14px;cursor:pointer;font-size:1rem;color:var(--gold);transition:color .2s;line-height:1}
+.search-bar button:hover{color:var(--gold-light)}
 .header-actions{display:flex;align-items:center;gap:8px;margin-left:auto}
 .header-btn{background:none;border:1px solid var(--gray-light);padding:9px 16px;border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:600;color:var(--text);display:flex;align-items:center;gap:7px;transition:all .2s;white-space:nowrap}
 .header-btn:hover{border-color:var(--dark);background:var(--gray-lighter)}
