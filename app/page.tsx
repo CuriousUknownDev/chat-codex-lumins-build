@@ -328,6 +328,81 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="services" id="resources">
+        <div className="section-container">
+          <div className="section-header">
+            <span className="section-badge">Service Pages</span>
+            <h2 className="section-title">Helpful California Lighting Resources</h2>
+            <p className="section-description">
+              Explore detailed pages built around the services and facility types we help most often
+              across California.
+            </p>
+          </div>
+
+          <div className="services-grid">
+            <Link href="/free-energy-audit-california" className="service-card-link">
+              <div className="service-card" data-number="A1">
+                <h3 className="service-title">Free Energy Audit California</h3>
+                <p className="service-description">
+                  Learn how a no-cost lighting audit can uncover waste, prioritize upgrades, and
+                  support rebate-focused retrofit planning.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/led-retrofit-warehouses" className="service-card-link">
+              <div className="service-card" data-number="A2">
+                <h3 className="service-title">LED Retrofit for Warehouses</h3>
+                <p className="service-description">
+                  Warehouse lighting guidance focused on high-bays, visibility, maintenance
+                  reduction, and operational efficiency.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/led-retrofit-offices" className="service-card-link">
+              <div className="service-card" data-number="A3">
+                <h3 className="service-title">LED Retrofit for Offices</h3>
+                <p className="service-description">
+                  Office upgrade guidance for cleaner light quality, lower operating costs, and more
+                  comfortable workspaces.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/dealership-hazardous-waste-recycling" className="service-card-link">
+              <div className="service-card" data-number="A4">
+                <h3 className="service-title">Dealership Hazardous Waste Recycling</h3>
+                <p className="service-description">
+                  A dedicated page for California dealership pickup needs including airbags,
+                  batteries, gas tanks, and related waste streams.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/new-construction-lighting-design-california" className="service-card-link">
+              <div className="service-card" data-number="A5">
+                <h3 className="service-title">New Construction Lighting Design California</h3>
+                <p className="service-description">
+                  Planning-focused guidance for commercial new builds that need coordinated lighting,
+                  controls, and long-term efficiency.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/services-content" className="service-card-link">
+              <div className="service-card" data-number="A6">
+                <h3 className="service-title">All Service Resources</h3>
+                <p className="service-description">
+                  Browse the full collection of Lumins Lighting’s California commercial lighting
+                  service pages in one place.
+                </p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta-section">
         <div className="cta-content">

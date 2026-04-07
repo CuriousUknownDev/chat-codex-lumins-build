@@ -89,6 +89,15 @@ export default function Footer() {
                 <a href="https://www.led-llc.com" target="_blank" rel="noopener noreferrer">Light Efficient Design</a>
               </div>
             </div>
+
+            <div className="footer-column">
+              <h4 className="footer-heading">Resources</h4>
+              <div className="footer-partner-links">
+                <Link href="/free-energy-audit-california">Free Energy Audit California</Link>
+                <Link href="/led-retrofit-warehouses">Warehouse LED Retrofit</Link>
+                <Link href="/dealership-hazardous-waste-recycling">Dealership Recycling</Link>
+              </div>
+            </div>
           </div>
         </div>
 
