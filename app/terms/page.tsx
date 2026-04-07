@@ -1,5 +1,13 @@
+import type { Metadata } from 'next'
 import NavBar from '../components/NavBar';
-export const metadata = { title: 'Terms & Conditions | Lumins Lighting' };
+
+export const metadata: Metadata = {
+  title: 'Terms and Conditions',
+  robots: {
+    index: false,
+    follow: true,
+  },
+}
 
 export default function TermsPage() {
   return (

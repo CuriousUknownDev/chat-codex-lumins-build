@@ -5,7 +5,19 @@ const html = `<!DOCTYPE html><!-- v3 -->
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Lumins Lighting — CCT Selectable T8 Linear Tubes</title>
+<meta name="description" content="Shop commercial T8 LED linear tubes from Lumins Lighting with selectable color temperature options for California customers."/>
+<link rel="canonical" href="https://chat-codex-lumins-build.vercel.app/shop"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Lumins Lighting Shop - CCT Selectable T8 Linear Tubes"/>
+<meta property="og:description" content="Shop commercial T8 LED linear tubes from Lumins Lighting with selectable color temperature options for California customers."/>
+<meta property="og:url" content="https://chat-codex-lumins-build.vercel.app/shop"/>
+<meta property="og:image" content="https://i0.wp.com/luminslighting.com/wp-content/uploads/2025/08/Lumins-Logo-new-1.jpg?fit=1200%2C630&ssl=1"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Lumins Lighting Shop - CCT Selectable T8 Linear Tubes"/>
+<meta name="twitter:description" content="Shop commercial T8 LED linear tubes from Lumins Lighting with selectable color temperature options for California customers."/>
+<meta name="twitter:image" content="https://i0.wp.com/luminslighting.com/wp-content/uploads/2025/08/Lumins-Logo-new-1.jpg?fit=1200%2C630&ssl=1"/>
+<title>Lumins Lighting Shop - CCT Selectable T8 Linear Tubes</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -21,12 +33,12 @@ const html = `<!DOCTYPE html><!-- v3 -->
 html{scroll-behavior:smooth}
 body{font-family:var(--font);color:var(--text);background:var(--white);line-height:1.5}
 
-/* ── TOP BAR ── */
+/* â”€â”€ TOP BAR â”€â”€ */
 .topbar{background:var(--dark);color:#aaa;font-size:.78rem;padding:7px 2%;display:flex;justify-content:space-between;align-items:center}
 .topbar a{color:#aaa;text-decoration:none}.topbar a:hover{color:var(--gold)}
 .topbar-right{display:flex;gap:20px}
 
-/* ── HEADER ── */
+/* â”€â”€ HEADER â”€â”€ */
 header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:200;box-shadow:var(--shadow)}
 .header-main{display:flex;align-items:center;gap:20px;padding:14px 2%}
 .logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
@@ -47,13 +59,13 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .cart-count{position:absolute;top:-6px;right:-6px;background:var(--gold);color:var(--dark);font-size:.65rem;font-weight:800;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;display:none}
 .cart-count.visible{display:flex}
 
-/* ── CATEGORY NAV ── */
+/* â”€â”€ CATEGORY NAV â”€â”€ */
 .cat-nav{background:var(--gray-lighter);border-bottom:1px solid var(--gray-light)}
 .cat-nav-inner{display:flex;gap:0;padding:0 2%;overflow-x:auto}
 .cat-nav-btn{padding:12px 20px;border:none;background:none;cursor:pointer;font-size:.85rem;font-weight:600;color:var(--gray);white-space:nowrap;border-bottom:3px solid transparent;transition:all .2s}
 .cat-nav-btn:hover,.cat-nav-btn.active{color:var(--dark);border-bottom-color:var(--gold)}
 
-/* ── PROMO BANNER ── */
+/* â”€â”€ PROMO BANNER â”€â”€ */
 .promo-banner{background:linear-gradient(135deg,var(--dark) 0%,#1a1a2e 100%);color:var(--white);padding:32px 2%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
 .promo-text h2{font-size:1.6rem;font-weight:800;margin-bottom:6px}
 .promo-text p{color:#aaa;font-size:.9rem}
@@ -62,10 +74,10 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .promo-badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:8px 16px;border-radius:8px;font-size:.8rem;display:flex;align-items:center;gap:7px}
 .promo-badge strong{color:var(--gold)}
 
-/* ── SHOP LAYOUT ── */
+/* â”€â”€ SHOP LAYOUT â”€â”€ */
 .shop-layout{display:grid;grid-template-columns:260px 1fr;gap:0;min-height:calc(100vh - 200px)}
 
-/* ── SIDEBAR ── */
+/* â”€â”€ SIDEBAR â”€â”€ */
 .sidebar{border-right:1px solid var(--gray-light);padding:24px;background:var(--white);position:sticky;top:65px;height:calc(100vh - 65px);overflow-y:auto}
 .sidebar-section{margin-bottom:28px}
 .sidebar-title{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--gray-light)}
@@ -81,7 +93,7 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .clear-filters{width:100%;padding:9px;border:1.5px solid var(--gray-light);border-radius:8px;background:none;cursor:pointer;font-size:.83rem;font-weight:600;color:var(--gray);transition:all .2s}
 .clear-filters:hover{border-color:var(--red);color:var(--red)}
 
-/* ── MAIN CONTENT ── */
+/* â”€â”€ MAIN CONTENT â”€â”€ */
 .main-content{padding:24px}
 .toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px}
 .result-count{font-size:.9rem;color:var(--gray)}
@@ -93,7 +105,7 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .view-btn{width:34px;height:34px;border:1.5px solid var(--gray-light);background:none;border-radius:7px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.9rem;transition:all .2s}
 .view-btn.active,.view-btn:hover{border-color:var(--dark);background:var(--dark);color:var(--white)}
 
-/* ── PRODUCT GRID ── */
+/* â”€â”€ PRODUCT GRID â”€â”€ */
 .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .product-grid.list-view{grid-template-columns:1fr}
 
@@ -138,7 +150,7 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .qty-ctrl button:hover{background:#ddd}
 .qty-ctrl input{width:36px;text-align:center;border:none;border-left:1.5px solid var(--gray-light);border-right:1.5px solid var(--gray-light);font-size:.85rem;font-family:var(--font);outline:none;padding:0 4px;height:28px}
 
-/* ── CART DRAWER ── */
+/* â”€â”€ CART DRAWER â”€â”€ */
 .cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:500;opacity:0;pointer-events:none;transition:opacity .3s}
 .cart-overlay.open{opacity:1;pointer-events:all}
 .cart-drawer{position:fixed;top:0;right:0;height:100vh;width:420px;background:var(--white);box-shadow:-8px 0 40px rgba(0,0,0,.15);z-index:501;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
@@ -172,7 +184,7 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .cart-continue{width:100%;background:none;border:1.5px solid var(--gray-light);padding:10px;border-radius:10px;font-size:.85rem;font-weight:600;cursor:pointer;margin-top:8px;font-family:var(--font);transition:all .2s}
 .cart-continue:hover{border-color:var(--dark)}
 
-/* ── CHECKOUT MODAL ── */
+/* â”€â”€ CHECKOUT MODAL â”€â”€ */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:600;display:none;align-items:center;justify-content:center;padding:20px}
 .modal-overlay.open{display:flex}
 .checkout-modal{background:var(--white);border-radius:20px;width:100%;max-width:720px;max-height:90vh;overflow-y:auto;box-shadow:var(--shadow-lg)}
@@ -208,7 +220,7 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .success-order{font-weight:800;color:var(--gold-dark);font-size:1.1rem;margin:12px 0}
 .success-close{background:var(--dark);color:var(--white);border:none;padding:12px 28px;border-radius:10px;font-size:.9rem;font-weight:700;cursor:pointer;margin-top:20px;font-family:var(--font)}
 
-/* ── PRODUCT DETAIL MODAL ── */
+/* â”€â”€ PRODUCT DETAIL MODAL â”€â”€ */
 .product-modal{background:var(--white);border-radius:20px;width:100%;max-width:800px;max-height:90vh;overflow-y:auto}
 .product-modal-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
 .product-modal-img{background:var(--gray-lighter);display:flex;align-items:center;justify-content:center;font-size:7rem;min-height:360px;border-radius:20px 0 0 20px}
@@ -220,12 +232,12 @@ header{background:var(--white);border-bottom:1px solid var(--gray-light);positio
 .specs-table tr td:first-child{color:var(--gray);width:50%}
 .specs-table tr td:last-child{font-weight:600}
 
-/* ── TOAST ── */
+/* â”€â”€ TOAST â”€â”€ */
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--dark2);color:var(--white);padding:12px 22px;border-radius:10px;font-size:.88rem;font-weight:600;z-index:1000;transition:transform .3s;white-space:nowrap;display:flex;align-items:center;gap:10px}
 .toast.show{transform:translateX(-50%) translateY(0)}
 .toast-icon{font-size:1rem}
 
-/* ── FOOTER ── */
+/* â”€â”€ FOOTER â”€â”€ */
 footer{background:var(--dark);padding:48px 2% 24px;margin-top:64px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
 .footer-logo-text{font-size:1.2rem;font-weight:800;color:var(--white);margin-bottom:10px}
@@ -246,10 +258,10 @@ footer{background:var(--dark);padding:48px 2% 24px;margin-top:64px}
 .product-img img{max-width:92%;max-height:82%;object-fit:contain;}
 
 /* ============================================================
-   LUMINS MAIN — THEME OVERRIDE (matches luminslighting.com)
+   LUMINS MAIN â€” THEME OVERRIDE (matches luminslighting.com)
    ============================================================ */
 
-/* 1. Google Fonts — same as main site */
+/* 1. Google Fonts â€” same as main site */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
 
 /* 2. Override CSS variables */
@@ -272,13 +284,13 @@ html, body {
   color: #1C1C1C !important;
 }
 
-/* 4. Headings — Space Grotesk */
+/* 4. Headings â€” Space Grotesk */
 h1, h2, h3, h4,
 .product-name, .modal-product-name,
 .logo-text, .page-title, .cart-title,
 .filter-title, .section-title { font-family: 'Space Grotesk', system-ui, sans-serif !important; }
 
-/* 5. Header — match main site NavBar depth */
+/* 5. Header â€” match main site NavBar depth */
 header {
   background: #1A1A2E !important;
   border-bottom: 1px solid rgba(255,255,255,0.08) !important;
@@ -295,14 +307,14 @@ header {
 .header-btn { color: #FFFFFF !important; }
 .header-btn svg { stroke: #FFFFFF !important; fill: none !important; }
 
-/* 6. Logo icon — blue */
+/* 6. Logo icon â€” blue */
 .logo-icon { background: #0066CC !important; border-radius: 10px !important; }
 .logo-icon svg { fill: #FFFFFF !important; }
 
-/* 7. Cart badge — blue */
+/* 7. Cart badge â€” blue */
 .cart-count { background: #0066CC !important; color: #FFFFFF !important; }
 
-/* 8. Main content area — light */
+/* 8. Main content area â€” light */
 .shop-layout, .products-section, .sidebar {
   background: #FFFFFF !important;
 }
@@ -346,7 +358,7 @@ input[type="range"] { accent-color: #0066CC !important; }
 .view-btn { color: #666 !important; }
 .view-btn.active { background: #0066CC !important; color: #FFFFFF !important; }
 
-/* 15. Add to Cart / Buy buttons → blue */
+/* 15. Add to Cart / Buy buttons â†’ blue */
 .btn-cart {
   background: #0066CC !important;
   color: #FFFFFF !important;
@@ -398,7 +410,7 @@ input[type="range"] { accent-color: #0066CC !important; }
 }
 .checkout-submit:hover { background: #0052A3 !important; }
 
-/* 18. "← Main Site" back link in header */
+/* 18. "â† Main Site" back link in header */
 a[href="/"].back-to-site, header a[href="/"] {
   color: rgba(255,255,255,0.75) !important;
   border-color: rgba(255,255,255,0.2) !important;
@@ -417,7 +429,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
 <body>
 
 <div class="topbar">
-  <span> Free shipping on orders over $1,000 · Fast quote turnaround · 5-Year warranty on all fixtures</span>
+  <span> Free shipping on orders over $1,000 Â· Fast quote turnaround Â· 5-Year warranty on all fixtures</span>
   <div class="topbar-right">
     <a href="#">Track Order</a>
     <a href="mailto:quotes@luminslighting.com?subject=Bulk Pricing Request&body=Company Name:%0AProject Details:%0AQuantity Needed:%0A">Bulk Pricing</a>
@@ -436,12 +448,12 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     </a>
     <div class="search-bar">
       <input type="text" id="searchInput" placeholder="Search by product name, SKU, wattage..." oninput="handleSearch()"/>
-      <button>🔍</button>
+      <button>ðŸ”</button>
     </div>
     <div class="header-actions">
-      <a class="header-btn" href="mailto:quotes@luminslighting.com?subject=Quote Request&body=Company Name:%0AProject Type:%0AFixture Type:%0AQuantity:%0ALocation:%0A">💬 Get a Quote</a>
+      <a class="header-btn" href="mailto:quotes@luminslighting.com?subject=Quote Request&body=Company Name:%0AProject Type:%0AFixture Type:%0AQuantity:%0ALocation:%0A">ðŸ’¬ Get a Quote</a>
       <button class="header-btn cart-btn" onclick="openCart()">
-        🛒 Cart
+        ðŸ›’ Cart
         <span class="cart-count" id="cartCount">0</span>
       </button>
     </div>
@@ -459,13 +471,13 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
 <!-- PROMO BANNER -->
 <div class="promo-banner">
   <div class="promo-text">
-    <h2>Commercial LED — <em>Factory Direct</em></h2>
+    <h2>Commercial LED â€” <em>Factory Direct</em></h2>
     <p>Premium fixtures, no middleman markup. Serving dealerships, warehouses & facilities across SoCal.</p>
   </div>
   <div class="promo-badges">
-    <div class="promo-badge"> <strong>40–60%</strong> Energy Savings</div>
+    <div class="promo-badge"> <strong>40â€“60%</strong> Energy Savings</div>
     <div class="promo-badge"> <strong>5-Year</strong> Warranty</div>
-    <div class="promo-badge"> Ships in <strong>2–5 Days</strong></div>
+    <div class="promo-badge"> Ships in <strong>2â€“5 Days</strong></div>
     <div class="promo-badge"> Rebate <strong>Eligible</strong></div>
   </div>
 </div>
@@ -480,10 +492,10 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     <div class="sidebar-section">
       <div class="sidebar-title">UL Type</div>
       <div class="filter-group">
-        <div class="filter-item"><input type="checkbox" id="ut1" onchange="applyFilters()"><label for="ut1">Type A – Plug &amp; Play</label></div>
-        <div class="filter-item"><input type="checkbox" id="ut2" onchange="applyFilters()"><label for="ut2">Type B – Ballast Bypass</label></div>
-        <div class="filter-item"><input type="checkbox" id="ut3" onchange="applyFilters()"><label for="ut3">Type A/B – Hybrid</label></div>
-        <div class="filter-item"><input type="checkbox" id="ut4" onchange="applyFilters()"><label for="ut4">Type C – External Driver</label></div>
+        <div class="filter-item"><input type="checkbox" id="ut1" onchange="applyFilters()"><label for="ut1">Type A â€“ Plug &amp; Play</label></div>
+        <div class="filter-item"><input type="checkbox" id="ut2" onchange="applyFilters()"><label for="ut2">Type B â€“ Ballast Bypass</label></div>
+        <div class="filter-item"><input type="checkbox" id="ut3" onchange="applyFilters()"><label for="ut3">Type A/B â€“ Hybrid</label></div>
+        <div class="filter-item"><input type="checkbox" id="ut4" onchange="applyFilters()"><label for="ut4">Type C â€“ External Driver</label></div>
       </div>
     </div>
     <div class="sidebar-section">
@@ -499,16 +511,16 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
       <div class="sidebar-title">Wattage</div>
       <div class="filter-group">
         <div class="filter-item"><input type="checkbox" id="w1" onchange="applyFilters()"><label for="w1">Under 10W</label></div>
-        <div class="filter-item"><input type="checkbox" id="w2" onchange="applyFilters()"><label for="w2">10W – 12W</label></div>
+        <div class="filter-item"><input type="checkbox" id="w2" onchange="applyFilters()"><label for="w2">10W â€“ 12W</label></div>
         <div class="filter-item"><input type="checkbox" id="w3" onchange="applyFilters()"><label for="w3">13W+</label></div>
       </div>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Color Temperature</div>
       <div class="filter-group">
-        <div class="filter-item"><input type="checkbox" id="ct1" onchange="applyFilters()"><label for="ct1">3000K – Warm White</label></div>
-        <div class="filter-item"><input type="checkbox" id="ct2" onchange="applyFilters()"><label for="ct2">4000K – Neutral White</label></div>
-        <div class="filter-item"><input type="checkbox" id="ct3" onchange="applyFilters()"><label for="ct3">5000K – Daylight</label></div>
+        <div class="filter-item"><input type="checkbox" id="ct1" onchange="applyFilters()"><label for="ct1">3000K â€“ Warm White</label></div>
+        <div class="filter-item"><input type="checkbox" id="ct2" onchange="applyFilters()"><label for="ct2">4000K â€“ Neutral White</label></div>
+        <div class="filter-item"><input type="checkbox" id="ct3" onchange="applyFilters()"><label for="ct3">5000K â€“ Daylight</label></div>
         <div class="filter-item"><input type="checkbox" id="ct4" onchange="applyFilters()"><label for="ct4">CCT Selectable</label></div>
       </div>
     </div>
@@ -516,7 +528,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
       <div class="sidebar-title">Price Range</div>
       <div class="price-range">
         <input class="price-input" type="number" id="priceMin" placeholder="$0" min="0" oninput="applyFilters()"/>
-        <span class="price-sep">–</span>
+        <span class="price-sep">â€“</span>
         <input class="price-input" type="number" id="priceMax" placeholder="$999" min="0" oninput="applyFilters()"/>
       </div>
     </div>
@@ -524,10 +536,10 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
       <div class="sidebar-title">Availability</div>
       <div class="filter-group">
         <div class="filter-item"><input type="checkbox" id="av1" onchange="applyFilters()"><label for="av1">In Stock</label></div>
-        <div class="filter-item"><input type="checkbox" id="av2" onchange="applyFilters()"><label for="av2">Ships in 2–5 Days</label></div>
+        <div class="filter-item"><input type="checkbox" id="av2" onchange="applyFilters()"><label for="av2">Ships in 2â€“5 Days</label></div>
       </div>
     </div>
-    <button class="clear-filters" onclick="clearFilters()">✕ Clear All Filters</button>
+    <button class="clear-filters" onclick="clearFilters()">âœ• Clear All Filters</button>
   </aside>
 
   <!-- MAIN -->
@@ -542,8 +554,8 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
           <option value="newest">Newest</option>
         </select>
         <div class="view-toggles">
-          <button class="view-btn active" id="gridViewBtn" onclick="setView('grid')" title="Grid">⊞</button>
-          <button class="view-btn" id="listViewBtn" onclick="setView('list')" title="List">☰</button>
+          <button class="view-btn active" id="gridViewBtn" onclick="setView('grid')" title="Grid">âŠž</button>
+          <button class="view-btn" id="listViewBtn" onclick="setView('list')" title="List">â˜°</button>
         </div>
       </div>
     </div>
@@ -555,15 +567,15 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
 <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
 <div class="cart-drawer" id="cartDrawer">
   <div class="cart-header">
-    <h3>🛒 Your Cart</h3>
-    <button class="cart-close" onclick="closeCart()">✕</button>
+    <h3>ðŸ›’ Your Cart</h3>
+    <button class="cart-close" onclick="closeCart()">âœ•</button>
   </div>
   <div class="cart-items" id="cartItems"></div>
   <div class="cart-footer" id="cartFooter" style="display:none">
     <div class="cart-subtotal-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
     <div class="cart-subtotal-row"><span>Estimated Shipping</span><span id="cartShipping">Free</span></div>
     <div class="cart-subtotal-row total"><span>Total</span><span id="cartTotal">$0.00</span></div>
-    <button class="cart-checkout-btn" onclick="openCheckout()">Proceed to Checkout →</button>
+    <button class="cart-checkout-btn" onclick="openCheckout()">Proceed to Checkout â†’</button>
     <button class="cart-continue" onclick="closeCart()">Continue Shopping</button>
   </div>
 </div>
@@ -573,7 +585,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
   <div class="checkout-modal">
     <div class="modal-header">
       <h3>Checkout</h3>
-      <button class="modal-close" onclick="closeCheckout()">✕</button>
+      <button class="modal-close" onclick="closeCheckout()">âœ•</button>
     </div>
     <div class="checkout-body" id="checkoutBody">
       <div class="checkout-steps">
@@ -595,7 +607,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
             <div class="form-group"><label>Email Address *</label><input type="email" id="co-email" placeholder="john@business.com"/></div>
           </div>
         </div>
-        <button class="checkout-submit" onclick="goToStep(2)">Continue to Shipping →</button>
+        <button class="checkout-submit" onclick="goToStep(2)">Continue to Shipping â†’</button>
       </div>
       <div id="checkoutStep2" style="display:none">
         <div class="checkout-section">
@@ -616,15 +628,15 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
           <div class="checkout-section" style="margin-top:20px">
             <h4>Shipping Method</h4>
             <div class="filter-group">
-              <div class="filter-item"><input type="radio" name="shipping" value="free" checked id="sh1"><label for="sh1">Standard (5–7 business days) — <strong>FREE</strong> on orders $500+</label></div>
-              <div class="filter-item"><input type="radio" name="shipping" value="express" id="sh2"><label for="sh2">Express (2–3 business days) — <strong>$49</strong></label></div>
-              <div class="filter-item"><input type="radio" name="shipping" value="overnight" id="sh3"><label for="sh3">Overnight — <strong>$99</strong></label></div>
+              <div class="filter-item"><input type="radio" name="shipping" value="free" checked id="sh1"><label for="sh1">Standard (5â€“7 business days) â€” <strong>FREE</strong> on orders $500+</label></div>
+              <div class="filter-item"><input type="radio" name="shipping" value="express" id="sh2"><label for="sh2">Express (2â€“3 business days) â€” <strong>$49</strong></label></div>
+              <div class="filter-item"><input type="radio" name="shipping" value="overnight" id="sh3"><label for="sh3">Overnight â€” <strong>$99</strong></label></div>
             </div>
           </div>
         </div>
         <div style="display:flex;gap:12px">
-          <button class="cart-continue" style="flex:1" onclick="goToStep(1)">← Back</button>
-          <button class="checkout-submit" style="flex:2" onclick="goToStep(3)">Continue to Payment →</button>
+          <button class="cart-continue" style="flex:1" onclick="goToStep(1)">â† Back</button>
+          <button class="checkout-submit" style="flex:2" onclick="goToStep(3)">Continue to Payment â†’</button>
         </div>
       </div>
       <div id="checkoutStep3" style="display:none">
@@ -632,22 +644,22 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
           <h4>Payment Information</h4>
           <div class="form-grid full">
             <div class="form-group"><label>Cardholder Name *</label><input type="text" id="co-cname" placeholder="John Smith"/></div>
-            <div class="form-group"><label>Card Number *</label><input type="text" id="co-card" placeholder="•••• •••• •••• ••••" maxlength="19"/></div>
+            <div class="form-group"><label>Card Number *</label><input type="text" id="co-card" placeholder="â€¢â€¢â€¢â€¢ â€¢â€¢â€¢â€¢ â€¢â€¢â€¢â€¢ â€¢â€¢â€¢â€¢" maxlength="19"/></div>
           </div>
           <div class="form-grid" style="margin-top:14px">
             <div class="form-group"><label>Expiration *</label><input type="text" id="co-exp" placeholder="MM / YY" maxlength="7"/></div>
-            <div class="form-group"><label>CVV *</label><input type="text" id="co-cvv" placeholder="•••" maxlength="4"/></div>
+            <div class="form-group"><label>CVV *</label><input type="text" id="co-cvv" placeholder="â€¢â€¢â€¢" maxlength="4"/></div>
           </div>
           <div class="form-grid full" style="margin-top:14px">
             <div class="form-group"><label>Purchase Order # (optional)</label><input type="text" id="co-po" placeholder="PO-2026-00123"/></div>
           </div>
           <div style="margin-top:14px;padding:12px 16px;background:var(--gray-lighter);border-radius:10px;font-size:.8rem;color:var(--gray)">
-            🔒 Your payment info is encrypted and never stored on our servers.
+            ðŸ”’ Your payment info is encrypted and never stored on our servers.
           </div>
         </div>
         <div style="display:flex;gap:12px">
-          <button class="cart-continue" style="flex:1" onclick="goToStep(2)">← Back</button>
-          <button class="checkout-submit" style="flex:2" onclick="goToStep(4)">Review Order →</button>
+          <button class="cart-continue" style="flex:1" onclick="goToStep(2)">â† Back</button>
+          <button class="checkout-submit" style="flex:2" onclick="goToStep(4)">Review Order â†’</button>
         </div>
       </div>
       <div id="checkoutStep4" style="display:none">
@@ -656,13 +668,13 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
           <table class="order-summary-table" id="orderSummaryTable"></table>
         </div>
         <div style="display:flex;gap:12px">
-          <button class="cart-continue" style="flex:1" onclick="goToStep(3)">← Back</button>
-          <button class="checkout-submit" style="flex:2;background:var(--green)" onclick="placeOrder()">✓ Place Order</button>
+          <button class="cart-continue" style="flex:1" onclick="goToStep(3)">â† Back</button>
+          <button class="checkout-submit" style="flex:2;background:var(--green)" onclick="placeOrder()">âœ“ Place Order</button>
         </div>
       </div>
       <div id="checkoutSuccess" style="display:none">
         <div class="success-screen">
-          <div class="success-icon">✅</div>
+          <div class="success-icon">âœ…</div>
           <h3>Order Placed!</h3>
           <p>Thank you for your order. You'll receive a confirmation email shortly.</p>
           <div class="success-order" id="successOrderNum"></div>
@@ -679,7 +691,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
   <div class="product-modal">
     <div class="modal-header">
       <h3 id="detailTitle">Product Details</h3>
-      <button class="modal-close" onclick="closeDetail()">✕</button>
+      <button class="modal-close" onclick="closeDetail()">âœ•</button>
     </div>
     <div class="product-modal-body">
       <div class="product-modal-img" id="detailImg"></div>
@@ -689,7 +701,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
 </div>
 
 <!-- TOAST -->
-<div class="toast" id="toast"><span class="toast-icon">✓</span><span id="toastMsg"></span></div>
+<div class="toast" id="toast"><span class="toast-icon">âœ“</span><span id="toastMsg"></span></div>
 
 <!-- FOOTER -->
 <footer>
@@ -776,7 +788,7 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 Lumins Lighting LLC · All rights reserved</p>
+    <p>Â© 2026 Lumins Lighting LLC Â· All rights reserved</p>
     <div class="payment-icons">
       <span class="pay-icon">VISA</span>
       <span class="pay-icon">MC</span>
@@ -787,13 +799,13 @@ a[href="/"].back-to-site:hover, header a[href="/"]:hover { color: #FFFFFF !impor
 </footer>
 
 <script>
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // PRODUCT DATA
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PRODUCTS = [
-{id:30,sku:'KT-LED7T8-24G-8CSJ-DX2',specSheet:'specs/2ft-selectable-spec.pdf',img:'data:image/jpeg;base64,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',name:'7W T8 LED Tube — 2 ft, CCT Selectable',category:'linear',nominalLength:'2ft',caseOnly:true,caseQty:25,ulType:'B',watts:7,lumens:1000,cct:'3000K/3500K/4000K/5000K/6500K',cri:80,price:10.43,origPrice:14.50,badge:'new',rating:4.8,reviews:29,stock:'in-stock',emoji:'💡',specs:{Watts:'7W',Lumens:'1,000 lm',Nominal:'24 in (2 ft)',CCT:'3000 / 3500 / 4000 / 5000 / 6500K Selectable',Base:'G13 (Medium Bi-Pin)',Type:'Type B Direct Drive',Wiring:'Single & Double Ended',Glass:'Glass Construction',Voltage:'120–277V AC',Lamp:'T8'},desc:'7W LED T8 Tube, 1,000 lm, Glass Construction, 2 ft, Color Select 3000/3500/4000/5000/6500K, 120–277V Input, Direct Drive, Single and Double Ended Wiring.'},
-{id:34,sku:'KT-LED11T8-36G-8CSJ-DX2',specSheet:'specs/3ft-selectable-spec.pdf',name:'11W T8 LED Tube — 3 ft, CCT Selectable',category:'linear',nominalLength:'3ft',caseOnly:true,caseQty:25,ulType:'B',watts:11,lumens:1500,cct:'3000K/3500K/4000K/5000K/6500K',emoji:'🔆',price:10.43,origPrice:14.75,rating:4.9,reviews:52,inStock:false,badge:'new',desc:'11W LED T8 Tube, 1500 lumen, Glass Construction, 3ft, Color Select 3000/3500/4000/5000/6500K, 120-277v Input, Direct Drive, Single and Double Ended Wiring.',specs:{'Watts':'11 W','Lumens':'1,500 lm','CCT':'3000/3500/4000/5000/6500K','Nominal Length':'36 in','Input Voltage':'120-277V','Drive Type':'Direct Drive','Wiring':'Single & Double Ended','Construction':'Glass'},img:'data:image/jpeg;base64,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'},
-{id:38,sku:'KT-LED12T8-48G-8CSJ-DX2',specSheet:'specs/4ft-selectable-spec.pdf',name:'12W T8 LED Tube — 4 ft, CCT Selectable',category:'linear',nominalLength:'4ft',caseOnly:true,caseQty:25,ulType:'B',watts:12,lumens:1800,cct:'3000K/3500K/4000K/5000K/6500K',emoji:'🔆',price:10.80,origPrice:15.00,rating:4.9,reviews:78,inStock:true,badge:'new',desc:'12W LED T8 Tube, 1800 lumen, Glass Construction, 4ft, Color Select 3000/3500/4000/5000/6500K, 120-277v Input, Direct Drive, Single and Double Ended Wiring.',specs:{'Watts':'12 W','Lumens':'1,800 lm','CCT':'3000/3500/4000/5000/6500K','Nominal Length':'48 in','Input Voltage':'120-277V','Drive Type':'Direct Drive','Wiring':'Single & Double Ended','Construction':'Glass'},img:'data:image/jpeg;base64,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'}
+{id:30,sku:'KT-LED7T8-24G-8CSJ-DX2',specSheet:'specs/2ft-selectable-spec.pdf',img:'data:image/jpeg;base64,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',name:'7W T8 LED Tube â€” 2 ft, CCT Selectable',category:'linear',nominalLength:'2ft',caseOnly:true,caseQty:25,ulType:'B',watts:7,lumens:1000,cct:'3000K/3500K/4000K/5000K/6500K',cri:80,price:10.43,origPrice:14.50,badge:'new',rating:4.8,reviews:29,stock:'in-stock',emoji:'ðŸ’¡',specs:{Watts:'7W',Lumens:'1,000 lm',Nominal:'24 in (2 ft)',CCT:'3000 / 3500 / 4000 / 5000 / 6500K Selectable',Base:'G13 (Medium Bi-Pin)',Type:'Type B Direct Drive',Wiring:'Single & Double Ended',Glass:'Glass Construction',Voltage:'120â€“277V AC',Lamp:'T8'},desc:'7W LED T8 Tube, 1,000 lm, Glass Construction, 2 ft, Color Select 3000/3500/4000/5000/6500K, 120â€“277V Input, Direct Drive, Single and Double Ended Wiring.'},
+{id:34,sku:'KT-LED11T8-36G-8CSJ-DX2',specSheet:'specs/3ft-selectable-spec.pdf',name:'11W T8 LED Tube â€” 3 ft, CCT Selectable',category:'linear',nominalLength:'3ft',caseOnly:true,caseQty:25,ulType:'B',watts:11,lumens:1500,cct:'3000K/3500K/4000K/5000K/6500K',emoji:'ðŸ”†',price:10.43,origPrice:14.75,rating:4.9,reviews:52,inStock:false,badge:'new',desc:'11W LED T8 Tube, 1500 lumen, Glass Construction, 3ft, Color Select 3000/3500/4000/5000/6500K, 120-277v Input, Direct Drive, Single and Double Ended Wiring.',specs:{'Watts':'11 W','Lumens':'1,500 lm','CCT':'3000/3500/4000/5000/6500K','Nominal Length':'36 in','Input Voltage':'120-277V','Drive Type':'Direct Drive','Wiring':'Single & Double Ended','Construction':'Glass'},img:'data:image/jpeg;base64,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'},
+{id:38,sku:'KT-LED12T8-48G-8CSJ-DX2',specSheet:'specs/4ft-selectable-spec.pdf',name:'12W T8 LED Tube â€” 4 ft, CCT Selectable',category:'linear',nominalLength:'4ft',caseOnly:true,caseQty:25,ulType:'B',watts:12,lumens:1800,cct:'3000K/3500K/4000K/5000K/6500K',emoji:'ðŸ”†',price:10.80,origPrice:15.00,rating:4.9,reviews:78,inStock:true,badge:'new',desc:'12W LED T8 Tube, 1800 lumen, Glass Construction, 4ft, Color Select 3000/3500/4000/5000/6500K, 120-277v Input, Direct Drive, Single and Double Ended Wiring.',specs:{'Watts':'12 W','Lumens':'1,800 lm','CCT':'3000/3500/4000/5000/6500K','Nominal Length':'48 in','Input Voltage':'120-277V','Drive Type':'Direct Drive','Wiring':'Single & Double Ended','Construction':'Glass'},img:'data:image/jpeg;base64,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'}
 ];
 
 let cart = [
@@ -802,9 +814,9 @@ let currentView = 'grid';
 let activeCategory = 'all';
 let searchQuery = '';
 
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // RENDER PRODUCTS
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function getFilteredProducts(){
   let items = [...PRODUCTS];
   // Category filter
@@ -862,7 +874,7 @@ function renderProducts(){
   const items = getFilteredProducts();
   document.getElementById('productCount').textContent = items.length;
   if(!items.length){
-    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px;color:var(--gray)"><div style="font-size:3rem;margin-bottom:12px">🔍</div><p style="font-size:1rem">No products match your filters.</p><button onclick="clearFilters()" style="margin-top:16px;padding:10px 20px;border:1.5px solid var(--gray-light);border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:600;background:none">Clear Filters</button></div>';
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px;color:var(--gray)"><div style="font-size:3rem;margin-bottom:12px">ðŸ”</div><p style="font-size:1rem">No products match your filters.</p><button onclick="clearFilters()" style="margin-top:16px;padding:10px 20px;border:1.5px solid var(--gray-light);border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:600;background:none">Clear Filters</button></div>';
     return;
   }
   grid.innerHTML = items.map(p => cardHTML(p)).join('');
@@ -874,7 +886,7 @@ function cardHTML(p){
   const _op = p.caseOnly && p.origPrice ? p.origPrice*p.caseQty : p.origPrice;
   const caseInfo = p.caseOnly ? \`<div style="font-size:.74rem;font-weight:700;color:#166534;background:#DCFCE7;padding:2px 8px;border-radius:5px;display:inline-block;margin-bottom:4px">Sold by Case (25 tubes)</div><div style="font-size:.72rem;color:#888;margin-bottom:4px">\${p.price.toFixed(2)} per tube</div>\` : '';
   const origPrice = _op ? \`<span class="product-price-orig">\${_op.toFixed(2)}</span><span class="product-price-save">Save \${(_op-_dp).toFixed(2)}</span>\` : '';
-  const stockLabel = (p.stock==='in-stock'||p.inStock) ? '<span class="in-stock">✓ In Stock</span>' : p.stock==='ships-soon' ? '<span class="low-stock">⏱ Ships in 2–5 Days</span>' : '<span class="out-stock">✗ Out of Stock</span>';
+  const stockLabel = (p.stock==='in-stock'||p.inStock) ? '<span class="in-stock">âœ“ In Stock</span>' : p.stock==='ships-soon' ? '<span class="low-stock">â± Ships in 2â€“5 Days</span>' : '<span class="out-stock">âœ— Out of Stock</span>';
   const pills = [p.watts?\`\${p.watts}W\`:null, p.lumens?\`\${p.lumens.toLocaleString()} lumens\`:null, p.cct||null].filter(Boolean).map(s=>\`<span class="spec-pill">\${s}</span>\`).join('');
   return \`<div class="product-card" id="pc-\${p.id}">
     <div class="product-img">\${badge}\${p.img ? \`<img src="\${p.img}" alt="\${p.name}"/>\` : \`<span style="font-size:\${currentView==='list'?'3rem':'4rem'}">\${p.emoji}</span>\`}</div>
@@ -885,11 +897,11 @@ function cardHTML(p){
       \${caseInfo}
       <div class="product-price-row"><span class="product-price">\${_dp.toFixed(2)}</span>\${p.caseOnly ? \`<span style="font-size:.76rem;color:#888;margin-left:4px">/ case</span>\` : \`\`}\${origPrice}</div>
       <div class="product-stock">\${stockLabel}</div>
-      <div class="qty-row"><span class="qty-label">\${p.caseOnly ? 'Cases:' : 'Qty:'}</span><div class="qty-ctrl"><button onclick="changeQty(\${p.id},-1)">−</button><input type="number" value="1" min="1" id="qty-\${p.id}" style="width:40px"/><button onclick="changeQty(\${p.id},1)">+</button></div></div>
+      <div class="qty-row"><span class="qty-label">\${p.caseOnly ? 'Cases:' : 'Qty:'}</span><div class="qty-ctrl"><button onclick="changeQty(\${p.id},-1)">âˆ’</button><input type="number" value="1" min="1" id="qty-\${p.id}" style="width:40px"/><button onclick="changeQty(\${p.id},1)">+</button></div></div>
       <div class="product-actions">
-        <button class="btn-cart" onclick="addToCart(\${p.id})">🛒 Add to Cart</button>
+        <button class="btn-cart" onclick="addToCart(\${p.id})">ðŸ›’ Add to Cart</button>
         <button class="btn-view" onclick="openDetail(\${p.id})">Details</button>
-        <button class="btn-wish" title="Save">♡</button>
+        <button class="btn-wish" title="Save">â™¡</button>
       </div>
     </div>
   </div>\`;
@@ -903,9 +915,9 @@ function changeQty(id, delta){
   input.value = v;
 }
 
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // FILTERS & SORTING
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function filterCategory(cat, btn){
   activeCategory = cat;
   document.querySelectorAll('.cat-nav-btn').forEach(b=>b.classList.remove('active'));
@@ -946,9 +958,9 @@ function setView(v){
   renderProducts();
 }
 
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // CART
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function addToCart(id){
   const product = PRODUCTS.find(p=>p.id===id);
   const qty = parseInt(document.getElementById('qty-'+id)?.value)||1;
@@ -956,7 +968,7 @@ function addToCart(id){
   var _cp = product.caseOnly ? product.price*product.caseQty : product.price;
   if(existing){ existing.qty += qty; } else cart.push({...product, qty, price: _cp});
   updateCartUI();
-  showToast(\`✓ \${product.name.split('—')[0].trim()} added to cart\`);
+  showToast(\`âœ“ \${product.name.split('â€”')[0].trim()} added to cart\`);
 }
 function removeFromCart(id){
   cart = cart.filter(i=>i.id!==id);
@@ -989,7 +1001,7 @@ function renderCartItems(){
   const el = document.getElementById('cartItems');
   const footer = document.getElementById('cartFooter');
   if(!cart.length){
-    el.innerHTML='<div class="cart-empty"><div class="cart-empty-icon">🛒</div><p>Your cart is empty.</p><p style="margin-top:6px;font-size:.8rem">Add some products to get started!</p></div>';
+    el.innerHTML='<div class="cart-empty"><div class="cart-empty-icon">ðŸ›’</div><p>Your cart is empty.</p><p style="margin-top:6px;font-size:.8rem">Add some products to get started!</p></div>';
     footer.style.display='none';
     return;
   }
@@ -1000,15 +1012,15 @@ function renderCartItems(){
     <div class="cart-item">
       <div class="cart-item-img">\${i.emoji}</div>
       <div class="cart-item-info">
-        <div class="cart-item-name">\${i.name.split('—')[0].trim()}</div>
+        <div class="cart-item-name">\${i.name.split('â€”')[0].trim()}</div>
         <div class="cart-item-sku">\${i.sku}</div>
         <div class="cart-item-row">
           <div class="cart-item-qty">
-            <button onclick="updateCartQty(\${i.id},-1)">−</button>
+            <button onclick="updateCartQty(\${i.id},-1)">âˆ’</button>
             <span>\${i.qty}</span>
             <button onclick="updateCartQty(\${i.id},1)">+</button>
           </div>
-          <div class="cart-item-price">\${(i.price*i.qty).toFixed(2)}</div>\${i.caseOnly ? \`<div style="font-size:.72rem;color:#888">\${i.qty} case\${i.qty>1?"s":""} · \${i.qty*i.caseQty} tubes</div>\` : \`\`}
+          <div class="cart-item-price">\${(i.price*i.qty).toFixed(2)}</div>\${i.caseOnly ? \`<div style="font-size:.72rem;color:#888">\${i.qty} case\${i.qty>1?"s":""} Â· \${i.qty*i.caseQty} tubes</div>\` : \`\`}
         </div>
         <button class="cart-item-remove" onclick="removeFromCart(\${i.id})">Remove</button>
       </div>
@@ -1018,16 +1030,16 @@ function renderCartItems(){
   document.getElementById('cartTotal').textContent = '$'+(subtotal+shipping).toFixed(2);
 }
 
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // CHECKOUT
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let currentStep = 1;
 function openCheckout(){
   if(!cart.length) return;
   closeCart();
   const btn = document.querySelector('.cart-checkout-btn');
   const orig = btn ? btn.innerHTML : '';
-  if(btn){ btn.innerHTML = '⏳ Redirecting to Checkout…'; btn.disabled = true; }
+  if(btn){ btn.innerHTML = 'â³ Redirecting to Checkoutâ€¦'; btn.disabled = true; }
   fetch('/api/checkout', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
@@ -1062,7 +1074,7 @@ function buildOrderSummary(){
   const shippingCost = subtotal>=1000?0:15;
   const tax = subtotal*0.0975;
   const total = subtotal+shippingCost+tax;
-  const rows = cart.map(i=>\`<tr><td>\${i.name.split('—')[0].trim()} <small style="color:var(--gray)">(\${i.sku})</small></td><td style="text-align:center">\${i.qty}</td><td style="text-align:right">$\${i.price.toFixed(2)}</td><td style="text-align:right">$\${(i.price*i.qty).toFixed(2)}</td></tr>\`).join('');
+  const rows = cart.map(i=>\`<tr><td>\${i.name.split('â€”')[0].trim()} <small style="color:var(--gray)">(\${i.sku})</small></td><td style="text-align:center">\${i.qty}</td><td style="text-align:right">$\${i.price.toFixed(2)}</td><td style="text-align:right">$\${(i.price*i.qty).toFixed(2)}</td></tr>\`).join('');
   document.getElementById('orderSummaryTable').innerHTML = \`
     <thead><tr><th>Product</th><th style="text-align:center">Qty</th><th style="text-align:right">Unit</th><th style="text-align:right">Total</th></tr></thead>
     <tbody>\${rows}
@@ -1085,9 +1097,9 @@ function resetCart(){
   updateCartUI();
 }
 
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // PRODUCT DETAIL
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function openDetail(id){
   const p = PRODUCTS.find(x=>x.id===id);
   document.getElementById('detailTitle').textContent = p.name;
@@ -1100,10 +1112,10 @@ function openDetail(id){
     <div class="product-price-row"><span class="product-price">$\${p.price.toFixed(2)}</span>\${origPrice}</div>
     <p style="font-size:.88rem;color:var(--gray);margin:10px 0 14px;line-height:1.6">\${p.desc}</p>
     <table class="specs-table">\${specRows}</table>
-    <div class="qty-row"><span class="qty-label">Qty:</span><div class="qty-ctrl"><button onclick="changeQty('d\${p.id}',-1)">−</button><input type="number" value="1" min="1" id="qty-d\${p.id}" style="width:40px"/><button onclick="changeQty('d\${p.id}',1)">+</button></div></div>
+    <div class="qty-row"><span class="qty-label">Qty:</span><div class="qty-ctrl"><button onclick="changeQty('d\${p.id}',-1)">âˆ’</button><input type="number" value="1" min="1" id="qty-d\${p.id}" style="width:40px"/><button onclick="changeQty('d\${p.id}',1)">+</button></div></div>
     <div class="product-actions" style="margin-top:10px">
-      \${p.specSheet ? '<a class="btn-spec" href="'+p.specSheet+'" target="_blank" rel="noopener">📄 Spec Sheet</a>' : ''}
-      <button class="btn-cart" onclick="addToCartFromDetail(\${p.id})">🛒 Add to Cart</button>
+      \${p.specSheet ? '<a class="btn-spec" href="'+p.specSheet+'" target="_blank" rel="noopener">ðŸ“„ Spec Sheet</a>' : ''}
+      <button class="btn-cart" onclick="addToCartFromDetail(\${p.id})">ðŸ›’ Add to Cart</button>
     </div>\`;
   document.getElementById('productOverlay').classList.add('open');
 }
@@ -1115,7 +1127,7 @@ function addToCartFromDetail(id){
   else cart.push({...product, qty});
   updateCartUI();
   closeDetail();
-  showToast(\`✓ \${product.name.split('—')[0].trim()} added to cart\`);
+  showToast(\`âœ“ \${product.name.split('â€”')[0].trim()} added to cart\`);
 }
 function closeDetail(){
   document.getElementById('productOverlay').classList.remove('open');
@@ -1123,9 +1135,9 @@ function closeDetail(){
 document.getElementById('productOverlay').addEventListener('click',function(e){if(e.target===this)closeDetail()});
 document.getElementById('checkoutOverlay').addEventListener('click',function(e){if(e.target===this)closeCheckout()});
 
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // TOAST
-// ──────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let toastTimer;
 function showToast(msg){
   const t = document.getElementById('toast');
@@ -1144,7 +1156,7 @@ renderProducts();
   if(location.search.includes('order=success')){
     const b = document.createElement('div');
     b.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#166534;color:#fff;text-align:center;padding:18px 24px;z-index:99999;font-size:1.05rem;font-weight:600;display:flex;align-items:center;justify-content:center;gap:16px;box-shadow:0 2px 12px rgba(0,0,0,.3)';
-    b.innerHTML = '✅ Order placed! Check your email for your confirmation & receipt. <button onclick="this.parentElement.remove();history.replaceState(null,\\'\\',' + "'/'" + ')" style="background:none;border:1px solid rgba(255,255,255,.6);color:#fff;padding:4px 14px;border-radius:20px;cursor:pointer;font-size:.9rem">Dismiss</button>';
+    b.innerHTML = 'âœ… Order placed! Check your email for your confirmation & receipt. <button onclick="this.parentElement.remove();history.replaceState(null,\\'\\',' + "'/'" + ')" style="background:none;border:1px solid rgba(255,255,255,.6);color:#fff;padding:4px 14px;border-radius:20px;cursor:pointer;font-size:.9rem">Dismiss</button>';
     document.body.prepend(b);
   }
 })();

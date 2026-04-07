@@ -1,5 +1,13 @@
+import type { Metadata } from 'next'
 import NavBar from '../components/NavBar';
-export const metadata = { title: 'Privacy Policy | Lumins Lighting' };
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  robots: {
+    index: false,
+    follow: true,
+  },
+}
 
 export default function PrivacyPage() {
   return (
