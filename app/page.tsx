@@ -48,7 +48,7 @@ export default function Home() {
 
             <div className="stat-item">
               <div className="stat-number">Large</div>
-              <div className="stat-label">Projects Capabilities</div>
+              <div className="stat-label">Project Capabilities</div>
             </div>
 
             <div className="stat-divider"></div>
