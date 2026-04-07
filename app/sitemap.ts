@@ -41,40 +41,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/free-energy-audit-california`,
+      url: `${baseUrl}/privacy`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.85,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
     {
-      url: `${baseUrl}/led-retrofit-warehouses`,
+      url: `${baseUrl}/terms`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.82,
-    },
-    {
-      url: `${baseUrl}/led-retrofit-offices`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.82,
-    },
-    {
-      url: `${baseUrl}/dealership-hazardous-waste-recycling`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.82,
-    },
-    {
-      url: `${baseUrl}/new-construction-lighting-design-california`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.82,
-    },
-    {
-      url: `${baseUrl}/services-content`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.65,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
   ]
 }
